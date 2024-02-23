@@ -96,7 +96,7 @@ export default function App() {
   </div>
   <div className="card__content">
     <div>Twitter Clone</div>
-    <button className=''>Visit</button>
+    <button className='text-gray-200'>Visit</button>
   </div>
 </div>
         </SwiperSlide>
