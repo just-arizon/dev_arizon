@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+/* #app { height: 100% } */
+html,
+body {
+  position: relative;
+  /* height: 100%1 */
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 60px;
+  max-width: 600px;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  border-radius: 15px;
+
+}
+
+.card {
+    width: 190px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+   }
+   .card__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Questrial', sans-serif;
+    color: #00d8c9;
+    font-size: 1.4em;
+    padding: 1em 0;
+   }
+   .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .circle {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+
+   @media (max-width: 320px) {
+    .swiper {
+      padding-top: 70px;
+    }
+    .swiper-slide {
+      width: 165px;
+      border-radius: 15px;
+    
+    }
+    .card{
+      width: 165px;
+      height: 160px;
+    }
+    .card__content{
+      padding: .7em;
+      font-size: 1.2em;
+    }
+  }
+  
+   
