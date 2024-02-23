@@ -36,6 +36,7 @@ body {
     background-color: #011522;
     border-radius: 8px;
     z-index: 1;
+    
    }
    .card__content{
     display: flex;
@@ -44,8 +45,8 @@ body {
     flex-direction: column;
     font-family: 'Questrial', sans-serif;
     color: #00d8c9;
-    font-size: 1.4em;
-    padding: 1em 0;
+    padding: 1.5em 0;
+    /* background-color: #ffbd44; */
    }
    .tools {
     display: flex;
@@ -78,9 +79,34 @@ body {
     background-color: #00ca4e;
    }
 
+   .btn-style {
+    margin: 0.3em;
+    color: #ddd;
+    padding: 2px 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    /* background: #231e23; */
+    box-shadow: 0 5px #00d8c9;
+  }
+ 
+  .btn-style:hover {
+    box-shadow: 0 3px #fffbfa;
+    top: 1px;
+    color: #00d8c9;
+  }
+  .btn-style:active {
+    box-shadow: 0 0 #fffbfa;
+    top: 5px;
+  }
+
    @media (max-width: 320px) {
     .swiper {
-      padding-top: 70px;
+      padding-top: 30px;
     }
     .swiper-slide {
       width: 165px;
@@ -94,6 +120,9 @@ body {
     .card__content{
       padding: .7em;
       font-size: 1.2em;
+    }
+    .card_title{
+      font-size: .8em;
     }
   }
   
