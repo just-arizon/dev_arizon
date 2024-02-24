@@ -9,6 +9,7 @@
     border-radius: 12px;
     margin: 1em;
     font-family: 'Questrial', sans-serif;
+    /* width: 50%; */
   }
 
 span{
@@ -78,7 +79,7 @@ span{
     outline: none;
     border-radius: 5px;
     border: none;
-    /* background: #231e23; */
+    background: #231e23;
     box-shadow: 0 5px #00d8c9;
   }
   .next {
@@ -95,3 +96,10 @@ span{
     top: 5px;
   }
   
+
+  @media screen and (min-width: 500px) {
+    
+.dash__profile {
+  width: 50%;
+}
+  }
