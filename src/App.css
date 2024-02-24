@@ -6,11 +6,11 @@
 
 body{
   width: 100%;
-  height: 200svh;
+  height: 300svh;
   background: linear-gradient(
     180deg,
     #231e23 0%,
-    #252525 10%,
+    #252525 -10%,
     #00d8c9 100%
   ); 
   color: #FFF;
