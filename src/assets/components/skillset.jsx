@@ -52,6 +52,19 @@ const skillset = () => {
                   className="next"
                 />
               </li>
+              <li className="iconify toolkits">
+              <Icon icon="ph:file-html-fill" 
+              width="25"
+              height="25"
+              className="next"/>
+              </li>
+            
+              <li className="iconify toolkits">
+              <Icon icon="ph:file-css-fill"
+               width="25"
+               height="25"
+               className="next"/>
+              </li>
             
             </ul>
           </div>
