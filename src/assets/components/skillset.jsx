@@ -1,12 +1,19 @@
 import React from 'react';
 import { Icon } from "@iconify/react";
 // import "../styles/skillset.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const skillset = () => {
   return (
     <div className='flex justify-center mt-12'>
-      <div className="dash__profile" data-speed="fast">
-            <ul className="flex gap-1 flex-wrap">
+      <div className="dash__profile" data-speed="" data-aos="">
+         <div className='pt-3 px-3'>
+         <span className=" text-[#00d8c9]">Skillset:</span>
+         </div>
+            <ul className="flex gap-1 flex-wrap pb-3">
               <li className="iconify toolkits">
                 <Icon icon="ic:outline-javascript" />
               </li>
