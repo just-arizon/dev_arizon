@@ -3,6 +3,7 @@ import Profile from './profile';
 import Swiper from './swiper'
 import Skillset from './skillset'
 import Experience from './experience';
+import Project from './project';
 function Home() {
   return (
     <div>
@@ -10,6 +11,7 @@ function Home() {
        <Swiper />
      <Skillset />
      <Experience />
+     <Project />
 
     </div>
   );
