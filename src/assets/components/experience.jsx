@@ -1,12 +1,13 @@
 import React from 'react';
+import "../styles/experience.css";
 
 const experience = () => {
   return (
-    <div className='my-12'>
+    <div className='mt-12'>
         <div className='flex justify-center'>
-            <span className="text-[#231e23] text-3xl">Experience</span>
+            <div className="text-[#00d8c9] text-3xl font-extrabold ">Experience</div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 flex flex-wrap my-10 lg:px-12 p-3'>
+        <div className='grid grid-cols-1 md:grid-cols-2 flex flex-wrap mt-5 lg:px-12 p-3'>
         <div className="dash__profile rounded p-5 w-11/12" data-speed="" data-aos="">
         <span className=" text-[#00d8c9] text-xl">Build Generation</span>
         <div><span className='text-[#00d8c9] font-normal text-sm'>October 2023 - Present</span></div>
