@@ -5,14 +5,14 @@ import Logo from "../images/Group 4.svg"
 
 function Navigation() {
   return (
-    <div className='fixed bottom-0 bg-[#252525] w-full py-2 px-2 flex justify-between'>
+    <div className='fixed top-0  w-full px-2 flex justify-center z-50 '>
       {/* Logo */}
-      <div className="logo flex items-center">
+      {/* <div className="logo flex items-center">
         <img src={Logo} alt="logo" />
-      </div>
+      </div> */}
 
       {/* Social Links */}
-      <div className="social_links">
+      <div className="social_links rounded-bl-lg rounded-br-lg bg-[#252525] lg:w-1/2 w-full border-2 border-[#00d8c9] flex justify-center">
       <ul className='social--wrapper flex gap-3'>
              <li className='list__item'>
               <button className='bg-transparent'>
@@ -39,10 +39,10 @@ function Navigation() {
       </div>
 
       {/* Hamburger */}
-      <div className="hamburger flex items-center">
+      {/* <div className="hamburger flex items-center">
       <Icon icon="solar:hamburger-menu-broken" className="hamburger__icon"
       width="1.6em" height="1.4em" color='#fff'/>
-      </div>
+      </div> */}
     </div>
   )
 }

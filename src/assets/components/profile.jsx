@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 function profile() {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col mt-8">
       <div className="dashboard__profile--img">
         <div className="indicator">
           <div className="arrow"></div>
