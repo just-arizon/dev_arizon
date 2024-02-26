@@ -5,15 +5,15 @@ import Logo from "../images/Group 4.svg"
 
 function Navigation() {
   return (
-    <div className='fixed top-0  w-full px-2 flex justify-center z-50 '>
+    <div className='fixed -top-2  w-full px-2 flex justify-center z-50 '>
       {/* Logo */}
       {/* <div className="logo flex items-center">
         <img src={Logo} alt="logo" />
       </div> */}
 
       {/* Social Links */}
-      <div className="social_links rounded-bl-lg rounded-br-lg bg-[#252525] lg:w-1/2 w-full border-2 border-[#00d8c9] flex justify-center">
-      <ul className='social--wrapper flex gap-3'>
+      <div className="social_links rounded-bl-lg rounded-br-lg bg-[#252525] lg:w-1/2 w-full border-0 border-[#00d8c9] flex justify-center items-center">
+      <ul className='social--wrapper flex gap-3 pb-2 pt-3'>
              <li className='list__item'>
               <button className='bg-transparent'>
                 <a href='https://github.com/just-arizon' className='nav-icon'>
