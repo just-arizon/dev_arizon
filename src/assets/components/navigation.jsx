@@ -13,26 +13,25 @@ function Navigation() {
 
       {/* Social Links */}
       <div className="social_links rounded-bl-lg rounded-br-lg bg-[#252525] lg:w-1/2 w-full border-0 border-[#00d8c9] flex justify-center items-center">
-      <ul className='social--wrapper flex gap-3 pb-2 pt-3'>
+      <ul className='social--wrapper flex lg:gap-10 gap-5 md:gap-8 pb-2 pt-3'>
              <li className='list__item'>
               <button className='bg-transparent'>
-                <a href='https://github.com/just-arizon' className='nav-icon'>
-                <Icon icon="line-md:github-loop" width="1.6em" height="1.6em" color='#fff'/>
-                </a>
+                <div>Home</div>
               </button>
               </li>
              <li className='list__item'>
               <button className='bg-transparent'>
-                <a href='https://www.linkedin.com/in/arinze-calistus/' className='nav-icon'>
-                             <Icon icon="line-md:linkedin" width="1.4em" height="1.6em" color='#fff'/>
-                </a>
+              <div>Skillset</div>
               </button>
               </li>
              <li className='list__item'>
               <button className='bg-transparent'>
-                <a href='https://twitter.com/just_Arizon' className='nav-icon'>
-                             <Icon icon="line-md:twitter" width="1.4em" height="1.6em" color='#fff'/>
-                </a>
+              <div>Experience</div>
+              </button>
+              </li>
+             <li className='list__item'>
+              <button className='bg-transparent'>
+              <div>Project</div>
               </button>
               </li>
            </ul>
