@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 // import {Button} from "@nextui-org/button";
 import Logo from "../images/Group 4.svg"
 
+
 function Navigation() {
   return (
     <div className='fixed -top-2  w-full px-2 flex justify-center z-50 '>
@@ -20,9 +21,9 @@ function Navigation() {
               </button>
               </li>
              <li className='list__item'>
-              <button className='bg-transparent'>
-              <div>Skillset</div>
-              </button>
+                  <button className='bg-transparent'>
+                  <div>Skillset</div>
+                  </button>
               </li>
              <li className='list__item'>
               <button className='bg-transparent'>
@@ -37,11 +38,7 @@ function Navigation() {
            </ul>
       </div>
 
-      {/* Hamburger */}
-      {/* <div className="hamburger flex items-center">
-      <Icon icon="solar:hamburger-menu-broken" className="hamburger__icon"
-      width="1.6em" height="1.4em" color='#fff'/>
-      </div> */}
+   
     </div>
   )
 }
