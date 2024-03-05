@@ -8,7 +8,7 @@ AOS.init();
 
 const skillset = () => {
   return (
-    <div className='flex justify-center mt-12'>
+    <div className='flex justify-center mt-12' id='skillset'>
       <div className="dash__profile" data-speed="" data-aos="">
          <div className='pt-3 px-3'>
          <span className=" text-[#00d8c9]">Skillset:</span>

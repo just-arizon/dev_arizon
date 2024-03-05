@@ -3,7 +3,7 @@ import "../styles/experience.css";
 
 const experience = () => {
   return (
-    <div className='mt-12'>
+    <div className='mt-12' id='experience' >
         <div className='flex justify-center'>
             <div className="text-[#00d8c9] text-3xl font-extrabold ">Experience</div>
         </div>

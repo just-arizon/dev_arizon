@@ -2,7 +2,7 @@ import React from 'react';
 
 const project = () => {
   return (
-    <div className='mt-12'>
+    <div className='mt-12' id='project'>
     <div className='flex justify-center'>
         <div className="text-[#252525] text-3xl font-extrabold ">Projects</div>
     </div>

@@ -7,7 +7,7 @@ import Project from './project';
 import Footer from './footer';
 function Home() {
   return (
-    <div>
+    <div id='home'>
        <Profile />
        <Swiper />
      <Skillset />
