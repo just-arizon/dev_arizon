@@ -26,7 +26,7 @@ function profile() {
         <div className="dash__profile--text">
           <p>
             <span className=" text-[#00d8c9]">Hello</span>, I’m Arinze
-            <br />Passionate about creating experiences that are easy to use, accessible, and also what meets user's need.
+            <br />Passionate about creating experiences that are easy to use, accessible, and also what meets user's need. Ability to deliver quality results while collaborating in rapidly changing work environments and team compositions. Also, willing to learn more technologies to become a better developer than yesterday. So determined and result oriented.
             Here are some of the projects I've worked on
           </p>
           
