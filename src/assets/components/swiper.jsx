@@ -35,7 +35,7 @@ export default function App() {
         }}
         pagination={false}
         modules={[Autoplay, EffectCoverflow, Pagination]}
-        classNameNameName="mySwiper second-step"
+        className="mySwiper second-step"
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="3000"
