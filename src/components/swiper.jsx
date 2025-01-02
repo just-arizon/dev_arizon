@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
+import {Button} from "@nextui-org/button";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -151,11 +152,11 @@ export default function App() {
         </SwiperSlide>
       </Swiper>
 
-      <div className="w-full flex justify-center p-16">
-        <button className="text-sm bg-[#242424] py-2 px-10 rounded-full flex gap-1">
+      <div className="w-full flex justify-center pt-20 pb-10">
+        <Button className="bg-[#242424]  rounded-full flex gap-1 py-2 px-8">
           <p>Resume</p>
           <div className="flex items-center h-full"><FaArrowRightFromBracket /></div>
-          </button>
+          </Button>
       </div>
     </>
   );

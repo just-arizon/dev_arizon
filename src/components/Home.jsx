@@ -28,40 +28,14 @@ function Home() {
     },
 
   ]
-  const projects = [
-    {
-      id: 1,
-      title: 'Fast',
-      languages: [        'JavaScript',
-        'React', 'CSS'],
-       details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, nesciunt reprehenderit voluptatibus culpa deserunt laudantium nulla ea alias blanditiis quos nihil aperiam, similique animi soluta fugit vel harum perspiciatis assumenda minima quam aliquid a eum possimus sit. Facilis, vero fuga incidunt voluptatem modi enim error eos mollitia ullam, odio quae?',
-      preview: 'https://fast-gamma.vercel.app/',
-      code: 'https://github.com/just-arizon/fast'
-    },
-    {
-      id: 2,
-      title: 'El-Neema',
-      languages: [        'JavaScript',
-        'React', 'CSS'],  
-          details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, nesciunt reprehenderit voluptatibus culpa deserunt laudantium nulla ea alias blanditiis quos nihil aperiam, similique animi soluta fugit vel harum perspiciatis assumenda minima quam aliquid a eum possimus sit. Facilis, vero fuga incidunt voluptatem modi enim error eos mollitia ullam, odio quae?'
-    },
-    {
-      id: 3,
-      title: 'Mymindspace',
-      languages: [        'JavaScript',
-        'React', 'CSS'],
-      details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, nesciunt reprehenderit voluptatibus culpa deserunt laudantium nulla ea alias blanditiis quos nihil aperiam, similique animi soluta fugit vel harum perspiciatis assumenda minima quam aliquid a eum possimus sit. Facilis, vero fuga incidunt voluptatem modi enim error eos mollitia ullam, odio quae?'
-    },
 
-  ]
 
   return (
-    <div id='home'>
+    <div>
        <Profile />
        <Swiper />
      {/* <Skillset /> */}
      {/* <Experience experiences={experience}/> */}
-     {/* <Project projects={projects}/> */}
      <Contact />
      <Footer />
 
