@@ -1,7 +1,7 @@
 import * as React from "react";
 import './App.css'
-import Home from './assets/components/Home'
-import Navigation from "./assets/components/navigation";
+import Home from './components/Home'
+import Navigation from "./components/navigation";
 
 
 function App() {

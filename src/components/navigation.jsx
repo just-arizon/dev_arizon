@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from "@iconify/react";
 // import {Button} from "@nextui-org/button";
-import Logo from "../images/Group 4.svg"
+import Logo from "../assets/images/Group 4.svg"
 import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -24,7 +24,7 @@ function Navigation() {
               </Link>
              <Link to="/#skillset" className='list__item' smooth>
                   <button className='bg-transparent'>
-                  <div>Skillset</div>
+                  <div>About</div>
                   </button>
               </Link>
              <Link to="/#experience" className='list__item' smooth>

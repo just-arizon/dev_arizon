@@ -60,7 +60,7 @@ span{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url(../images/pro.jpg);
+    background-image: url(../assets/images/pro.jpg);
     background-position: center;
     background-size: cover;
     border: 3px solid #00d8c9;

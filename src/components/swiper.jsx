@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -119,7 +120,9 @@ export default function App() {
             </div>
             <div className="flex items-center justify-center">
               <div className="card__content">
-                <div className=" font-extrabold card_title">Instagram Clone</div>
+                <div className=" font-extrabold card_title">
+                  Instagram Clone
+                </div>
                 <button className="text-sm btn-style ">Visit</button>
               </div>
             </div>
@@ -147,6 +150,13 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      <div className="w-full flex justify-center p-16">
+        <button className="text-sm bg-[#242424] py-2 px-10 rounded-full flex gap-1">
+          <p>Resume</p>
+          <div className="flex items-center h-full"><FaArrowRightFromBracket /></div>
+          </button>
+      </div>
     </>
   );
 }

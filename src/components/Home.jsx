@@ -4,6 +4,7 @@ import Swiper from './swiper'
 import Skillset from './skillset'
 import Experience from './experience';
 import Project from './project';
+import Contact from './contact';
 import Footer from './footer';
 function Home() {
   const experience = [
@@ -58,9 +59,10 @@ function Home() {
     <div id='home'>
        <Profile />
        <Swiper />
-     <Skillset />
-     <Experience experiences={experience}/>
-     <Project projects={projects}/>
+     {/* <Skillset /> */}
+     {/* <Experience experiences={experience}/> */}
+     {/* <Project projects={projects}/> */}
+     <Contact />
      <Footer />
 
     </div>
