@@ -13,7 +13,7 @@ const contact = () => {
           <span className="flex flex-wrap justify-center">
             <Link
               href={"mailto:calistusarinzechinweuba@gmail.com "}
-              className="underline flex items-end font-semibold text-[#242424] text-md"
+              className="underline flex items-end font-semibold text-[#242424] text-sm"
             >
               calistusarinzechinweuba@gmail.com
             </Link>{" "}

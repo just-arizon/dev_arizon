@@ -4,6 +4,8 @@ import Navigation from "./navigation";
 import Footer from "./footer";
 import { Card } from "@nextui-org/card";
 import { motion } from "framer-motion";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
+
 
 const Project = ({ projects }) => {
   // Animation variants for each card
@@ -46,17 +48,24 @@ const Project = ({ projects }) => {
         <div className="flex gap-4 mt-4">
           <Link
             href={project.preview}
-            className="text-[#00d8c9] py-2 px-4 rounded-md"
+            className="text-[#00d8c9] py-2 px-4 rounded-md flex gap-2"
             aria-label={`Preview ${project.title}`}
           >
-            Preview
+              <p>Preview</p>
+            <span>
+              <FaArrowRightFromBracket />
+            </span>
           </Link>
           <Link
             href={project.code}
-            className="text-[#00d8c9] py-2 px-4 rounded-md"
+            className="text-[#00d8c9] py-2 px-4 rounded-md flex gap-2"
             aria-label={`View code for ${project.title}`}
           >
-            Code
+            <p>Code</p>
+            <span>
+              <FaArrowRightFromBracket />
+            </span>
+
           </Link>
         </div>
       </Card>
