@@ -8,11 +8,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 function Navigation() {
   return (
-    <div className='fixed -top-2  w-full px-2 flex justify-center z-50 '>
-      {/* Logo */}
-      {/* <div className="logo flex items-center">
-        <img src={Logo} alt="logo" />
-      </div> */}
+    <div className='fixed -top-2  w-full px-2 flex justify-center z-50 text-white'>
+   
 
       {/* Social Links */}
       <div className="social_links rounded-bl-lg rounded-br-lg bg-[#252525] lg:w-1/2 w-full border-0 border-[#00d8c9] flex justify-center items-center">
@@ -22,7 +19,7 @@ function Navigation() {
                 <div>Home</div>
               </button>
               </Link>
-             <Link to="/skillset" className='list__item' smooth>
+             <Link to="/about" className='list__item' smooth>
                   <button className='bg-transparent'>
                   <div>About</div>
                   </button>

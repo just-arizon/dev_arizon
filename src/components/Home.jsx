@@ -6,6 +6,8 @@ import Experience from './experience';
 import Project from './project';
 import Contact from './contact';
 import Footer from './footer';
+import '.././App.css'
+
 function Home() {
   const experience = [
     {
@@ -31,7 +33,7 @@ function Home() {
 
 
   return (
-    <div>
+    <div className='body'>
        <Profile />
        <Swiper />
      {/* <Skillset /> */}
