@@ -22,7 +22,7 @@ const projects = [
     title: 'El-Neema',
     languages: [        'JavaScript',
       'React', 'CSS'],  
-        details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, nesciunt reprehenderit voluptatibus culpa deserunt laudantium nulla ea alias blanditiis quos nihil aperiam, similique animi soluta fugit vel '
+        details: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, nesciunt reprehenderit voluptatibus culpa deserunt laudantium nulla ea alias blanditiis quos nihil aperiam,'
   },
   {
     id: 3,

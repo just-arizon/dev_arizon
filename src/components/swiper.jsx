@@ -153,7 +153,7 @@ export default function App() {
       </Swiper>
 
       <div className="w-full flex justify-center pt-20 pb-10">
-        <Button className="bg-[#242424]  rounded-full flex gap-1 py-2 px-8">
+        <Button className="bg-[#242424] text-white rounded-full flex gap-1 py-2 px-8">
           <p>Resume</p>
           <div className="flex items-center h-full"><FaArrowRightFromBracket /></div>
           </Button>
