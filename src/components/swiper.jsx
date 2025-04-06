@@ -15,6 +15,51 @@ import "../styles/swiper.css";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
+const projects = [
+  {
+    id: 1,
+    title: "GitHub App",
+    description: "A clone of the popular social media app Instagram",
+    link:"https://instagram-clone-1a2b3.web.app/",
+    image: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1634542217/instagram-clone-1a2b3.web.app__1__1_1_x3gq0i.png",   
+  },
+  {
+    id: 2,
+    title: "Mymind Space",
+    description: "A clone of the popular social media app Instagram",
+    link:"https://instagram-clone-1a2b3.web.app/",
+    image: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1634542217/instagram-clone-1a2b3.web.app__1__1_1_x3gq0i.png",   
+  },
+  {
+    id: 3,
+    title: "El-Neema",
+    description: "A clone of the popular social media app Instagram",
+    link:"https://instagram-clone-1a2b3.web.app/",
+    image: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1634542217/instagram-clone-1a2b3.web.app__1__1_1_x3gq0i.png",   
+  },
+  {
+    id: 4,
+    title: "Instagram Clone",
+    description: "A clone of the popular social media app Instagram",
+    link:"https://instagram-clone-1a2b3.web.app/",
+    image: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1634542217/instagram-clone-1a2b3.web.app__1__1_1_x3gq0i.png",   
+  },
+  {
+    id: 5,
+    title: "Instagram Clone",
+    description: "A clone of the popular social media app Instagram",
+    link:"https://instagram-clone-1a2b3.web.app/",
+    image: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1634542217/instagram-clone-1a2b3.web.app__1__1_1_x3gq0i.png",   
+  },
+  {
+    id: 6,
+    title: "Instagram Clone",
+    description: "A clone of the popular social media app Instagram",
+    link:"https://instagram-clone-1a2b3.web.app/",
+    image: "https://res.cloudinary.com/dssvrf9oz/image/upload/v1634542217/instagram-clone-1a2b3.web.app__1__1_1_x3gq0i.png",   
+  },
+]
+
 export default function App() {
   return (
     <>
@@ -43,7 +88,8 @@ export default function App() {
         data-aos-delay="3000"
         data-aos-offset="0"
       >
-        <SwiperSlide>
+     {projects.map((project) => (
+        <SwiperSlide key={project.id}>
           <div className="card">
             <div className="tools">
               <div className="circle">
@@ -58,98 +104,14 @@ export default function App() {
             </div>
             <div className="flex items-center justify-center">
               <div className="card__content">
-                <div className="card_title font-extrabold">Instagram Clone</div>
+                <div className="card_title font-extrabold">{project.title}</div>
                 <button className="text-sm btn-style ">Visit</button>
               </div>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="tools">
-              <div className="circle">
-                <span className="red box"></span>
-              </div>
-              <div className="circle">
-                <span className="yellow box"></span>
-              </div>
-              <div className="circle">
-                <span className="green box"></span>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="card__content">
-                <div className="card_title font-extrabold">Instagram Clone</div>
-                <button className="text-sm btn-style ">Visit</button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="tools">
-              <div className="circle">
-                <span className="red box"></span>
-              </div>
-              <div className="circle">
-                <span className="yellow box"></span>
-              </div>
-              <div className="circle">
-                <span className="green box"></span>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="card__content">
-                <div className="card_title font-extrabold">Instagram Clone</div>
-                <button className="text-sm btn-style ">Visit</button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="tools">
-              <div className="circle">
-                <span className="red box"></span>
-              </div>
-              <div className="circle">
-                <span className="yellow box"></span>
-              </div>
-              <div className="circle">
-                <span className="green box"></span>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="card__content">
-                <div className=" font-extrabold card_title">
-                  Instagram Clone
-                </div>
-                <button className="text-sm btn-style ">Visit</button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="tools">
-              <div className="circle">
-                <span className="red box"></span>
-              </div>
-              <div className="circle">
-                <span className="yellow box"></span>
-              </div>
-              <div className="circle">
-                <span className="green box"></span>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="card__content">
-                <div className="card_title font-extrabold">Instagram Clone</div>
-                <button className="text-sm btn-style ">Visit</button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+      ))}
+
       </Swiper>
 
       <div className="w-full flex justify-center pt-20 pb-10">

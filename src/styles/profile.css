@@ -103,3 +103,9 @@ span{
   width: 50%;
 }
   }
+  @media screen and (max-width: 500px) {
+    
+    .dash__profile {
+      width: 70%;
+    }
+      }

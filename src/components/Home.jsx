@@ -3,9 +3,9 @@ import Profile from './profile';
 import Swiper from './swiper'
 import Skillset from './skillset'
 import Experience from './experience';
-import Project from './project';
+import Project from '../layouts/project';
 import Contact from './contact';
-import Footer from './footer';
+import Footer from '../layouts/footer';
 import '.././App.css'
 
 function Home() {

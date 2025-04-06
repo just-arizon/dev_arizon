@@ -4,8 +4,8 @@ import ErrorPage from "./components/error.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import Projects from "./components/project.jsx";
-import { NextUIProvider } from "@nextui-org/react";
+import Projects from "./layouts/project.jsx";
+import { HeroUIProvider } from "@heroui/react";
 
 const projects = [
   {
@@ -52,8 +52,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <NextUIProvider>
+    <HeroUIProvider>
       <RouterProvider router={router} />
-    </NextUIProvider>
+    </HeroUIProvider>
   </React.StrictMode>
 );
