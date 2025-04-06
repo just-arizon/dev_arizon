@@ -1,6 +1,5 @@
 import * as React from "react";
-// import './App.css'
-import Home from './components/Home'
+import './App.css'
 import Navigation from "./components/navigation";
 import Hero from "./layouts/hero";
 import About from "./layouts/about";
@@ -14,7 +13,6 @@ function App() {
   return (
     <>
      <Navigation />
-     {/* <Home /> */}
      <Hero />
      <About />
       <Projects />

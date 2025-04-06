@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Terminal, Code, Github, Linkedin, Mail, ExternalLink } from "lucide-react"
 const hero = () => {
   return (
-    <section className="py-20 border-b border-black/10 bg-gradient-to-br from-white via-slate-50 to-gray-100">
+    <section className="lg:py-20 py-8 border-b border-black/10 bg-gradient-to-br from-white via-slate-50 to-gray-100">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
             <div className="space-y-2">

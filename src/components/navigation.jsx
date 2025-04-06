@@ -10,7 +10,9 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ModeToggle } from "@/components/mode-toggle";
 import Logo from "../assets/images/pro.jpg";
+
 
 function Navigation() {
   return (
@@ -36,9 +38,7 @@ function Navigation() {
               </Link>
             ))}
           </nav>
-          <Button variant="outline" className="border-black/20 text-xs">
-            Connect_
-          </Button>
+          <ModeToggle className="" />
         </div>
       </header>
     </>

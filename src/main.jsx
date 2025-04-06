@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Projects from "./layouts/project.jsx";
 import { HeroUIProvider } from "@heroui/react";
+import { ThemeProvider } from "@/components/theme-provider"
 
 const projects = [
   {
@@ -40,10 +41,7 @@ const router = createBrowserRouter([
     element: <App />,
     // errorElement: <ErrorPage />,
   },
-  {
-    path: "/projects",
-    element: <Projects projects={projects}/>,
-  },
+
   {
     path: "/*",
     element: <ErrorPage/>,
@@ -52,8 +50,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HeroUIProvider>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
-    </HeroUIProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
