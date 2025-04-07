@@ -1,53 +1,84 @@
-import React from 'react'
+import React from "react"
 import { Badge } from "@/components/ui/badge"
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "@/components/ui/tabs"
+
 const Tools = () => {
+  const skills = {
+    All: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "GraphQL",
+      "REST API",
+      "Git",
+      "Docker",
+      "AWS",
+      "Firebase",
+      "Redux",
+      "Tailwind CSS",
+      "Jest",
+      "CI/CD",
+      "Webpack",
+      "Figma",
+      "Responsive Design",
+    ],
+    Frontend: ["React", "Next.js", "TypeScript", "Redux", "Tailwind CSS", "Responsive Design"],
+    Backend: ["Node.js", "Express", "MongoDB", "PostgreSQL", "GraphQL", "REST API"],
+    DevOps: ["Git", "Docker", "AWS", "CI/CD"],
+    Tools: ["Webpack", "Figma", "Jest"],
+  }
+
   return (
     <section id="skills" className="py-20 border-b border-black/10">
-    <div className="container mx-auto px-4">
-      <div className="flex items-center gap-2 mb-12">
-        <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12"></div>
-        <h2 className="text-2xl font-bold">Skills</h2>
-        <div className="h-px bg-gradient-to-r from-black/20 to-transparent flex-grow"></div>
-      </div>
+      <div className="container mx-auto px-4">
+        <div className="flex items-center gap-2 mb-12">
+          <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12" />
+          <h2 className="text-2xl font-bold">Skills</h2>
+          <div className="h-px bg-gradient-to-r from-black/20 to-transparent flex-grow" />
+        </div>
 
-      <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-1 gap-10">
+          <div>
+            <h3 className="text-xl font-bold mb-6">Tools & Technologies</h3>
 
-        <div>
-          <h3 className="text-xl font-bold mb-6">Tools & Technologies</h3>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Node.js",
-              "Express",
-              "MongoDB",
-              "PostgreSQL",
-              "GraphQL",
-              "REST API",
-              "Git",
-              "Docker",
-              "AWS",
-              "Firebase",
-              "Redux",
-              "Tailwind CSS",
-              "Jest",
-              "CI/CD",
-              "Webpack",
-              "Figma",
-              "Responsive Design",
-            ].map((skill) => (
-              <Badge key={skill} variant="outline" className="border-black/20 py-1.5">
-                {skill}
-              </Badge>
-            ))}
+            <Tabs defaultValue="All" className="w-full">
+              <TabsList className="flex flex-wrap gap-2 mb-6 bg-transparent justify-start">
+                {Object.keys(skills).map((tab) => (
+                  <TabsTrigger key={tab} value={tab} className="data-[state=active]:bg-black data-[state=active]:text-white">
+                    {tab}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+
+              {Object.entries(skills).map(([category, tools]) => (
+                <TabsContent key={category} value={category}>
+                  <div className="flex flex-wrap gap-2">
+                    {tools.map((skill) => (
+                      <Badge
+                        key={skill}
+                        variant="outline"
+                        className="border-black/20 py-1.5"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </TabsContent>
+              ))}
+            </Tabs>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
+    </section>
   )
 }
 

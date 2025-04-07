@@ -60,22 +60,22 @@ function Navigation() {
                 </DrawerHeader>
                 <nav className="flex flex-col gap-4 p-4">
                   <DrawerClose asChild>
-                    <Link href="/" className="text-xl hover:underline">
+                    <Link href="/" className="text-base hover:underline">
                       About
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/project" className="text-xl hover:underline">
+                    <Link href="/project" className="text-base hover:underline">
                       Project
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/tools" className="text-xl hover:underline">
+                    <Link href="/tools" className="text-base hover:underline">
                       Tools
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/contact" className="text-xl hover:underline">
+                    <Link href="/contact" className="text-base hover:underline">
                       Contact
                     </Link>
                   </DrawerClose>
