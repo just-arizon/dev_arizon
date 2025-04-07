@@ -2,17 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   Terminal,
-  Code,
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
+  AlignRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ModeToggle } from "@/components/mode-toggle";
 import Logo from "../assets/images/pro.jpg";
-
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 
 function Navigation() {
   return (
@@ -38,7 +43,53 @@ function Navigation() {
               </Link>
             ))}
           </nav>
-          <ModeToggle className="" />
+
+
+          <div className="lg:hidden md:hidden">
+            <Drawer className="">
+              {" "}
+            
+              <DrawerTrigger>
+                <Button variant="outline">
+                <AlignRight size={28} strokeWidth={2.5} />
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent >
+                <DrawerHeader className="text-left">
+                  <DrawerTitle className="text-xl font-bold">Menu</DrawerTitle>
+                </DrawerHeader>
+                <nav className="flex flex-col gap-4 p-4">
+                  <DrawerClose asChild>
+                    <Link href="/" className="text-lg hover:underline">
+                      Home
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <Link href="/about" className="text-lg hover:underline">
+                      About Us
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <Link href="/services" className="text-lg hover:underline">
+                      Services
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <Link href="/contact" className="text-lg hover:underline">
+                      Contact
+                    </Link>
+                  </DrawerClose>
+                </nav>
+                <DrawerFooter className="mt-auto">
+                  <DrawerClose>
+                    <Button variant="outline" className="w-full">
+                      Close
+                    </Button>
+                  </DrawerClose>
+                </DrawerFooter>
+              </DrawerContent>
+            </Drawer>
+          </div>
         </div>
       </header>
     </>
