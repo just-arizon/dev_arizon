@@ -23,13 +23,13 @@ function Navigation() {
   return (
     <>
       {/* Header */}
-      <header className="border-b border-black/10 p-4">
+      <header className="border-b border-black/10 p-4 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-10">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold flex items-center gap-2">
             <Terminal className="h-5 w-5" />
             <Avatar>
               <AvatarImage src={Logo} alt="@shadcn" />
-              <AvatarFallback>AZ</AvatarFallback>
+              <AvatarFallback>AR</AvatarFallback>
             </Avatar>
           </Link>
           <nav className="hidden md:flex gap-6">
@@ -60,22 +60,22 @@ function Navigation() {
                 </DrawerHeader>
                 <nav className="flex flex-col gap-4 p-4">
                   <DrawerClose asChild>
-                    <Link href="/" className="text-lg hover:underline">
-                      Home
+                    <Link href="/" className="text-xl hover:underline">
+                      About
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/about" className="text-lg hover:underline">
-                      About Us
+                    <Link href="/project" className="text-xl hover:underline">
+                      Project
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/services" className="text-lg hover:underline">
-                      Services
+                    <Link href="/tools" className="text-xl hover:underline">
+                      Tools
                     </Link>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/contact" className="text-lg hover:underline">
+                    <Link href="/contact" className="text-xl hover:underline">
                       Contact
                     </Link>
                   </DrawerClose>
