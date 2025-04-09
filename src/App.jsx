@@ -3,6 +3,7 @@ import './App.css'
 import Navigation from "./components/navigation";
 import Hero from "./layouts/hero";
 import About from "./layouts/about";
+import Experience from "./layouts/experience";
 import Projects from "./layouts/project";
 import Contact from "./layouts/contact"
 import Tools from "./layouts/tools"
@@ -15,6 +16,7 @@ function App() {
      <Navigation />
      <Hero />
      <About />
+     <Experience />
       <Projects />
       <Tools />
       <Contact />

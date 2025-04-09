@@ -51,7 +51,7 @@ const Tools = () => {
             <h3 className="text-xl font-bold mb-6">Tools & Technologies</h3>
 
             <Tabs defaultValue="All" className="w-full">
-              <TabsList className="flex flex-wrap gap-2 mb-6 bg-transparent justify-start">
+              <TabsList className="flex flex-wrap gap-2 lg:mb-6 mb-10 bg-transparent justify-start">
                 {Object.keys(skills).map((tab) => (
                   <TabsTrigger key={tab} value={tab} className="data-[state=active]:bg-black data-[state=active]:text-white">
                     {tab}
