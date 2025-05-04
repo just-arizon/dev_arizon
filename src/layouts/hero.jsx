@@ -2,14 +2,15 @@ import React from 'react'
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom";
 import { Terminal, Code, Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+
 const hero = () => {
   return (
-    <section className="pt-32 lg:pt-40 lg:py-20 py-8 border-b border-black/10 bg-gradient-to-br from-white via-slate-50 to-gray-100 ">
+    <section className="pt-32 lg:pt-40 lg:p-20 py-8 border-b border-black/10 bg-gradient-to-br from-white via-slate-50 to-gray-100 ">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
             <div className="space-y-2">
               <p className="text-gray-500 text-sm">&gt; initiating sequence...</p>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              <h1 className="font-clash text-4xl md:text-6xl font-bold leading-tight">
                 Full Stack <br />
                 Developer_
               </h1>

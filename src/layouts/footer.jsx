@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Logo from "../assets/images/pro.jpg";
 const Footer = () => {
   return (
-    <footer className="py-8 border-t border-black/10">
+    <footer className="py-8 border-t border-black/10 lg:px-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">

@@ -13,7 +13,7 @@ const About = () => {
     <div className="container mx-auto px-4">
       <div className="flex items-center gap-2 mb-12">
         <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12"></div>
-        <h2 className="text-2xl font-bold">About</h2>
+        <h2 className="font-clash text-2xl font-bold">About</h2>
         <div className="h-px bg-gradient-to-r from-black/20 to-transparent flex-grow"></div>
       </div>
 

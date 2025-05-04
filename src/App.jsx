@@ -14,13 +14,15 @@ function App() {
   return (
     <>
      <Navigation />
-     <Hero />
-     <About />
-     <Experience />
-      <Projects />
-      <Tools />
-      <Contact />
-      <Footer />  
+       <Hero />
+     <main className="lg:mx-20">
+       <About />
+       <Experience />
+        <Projects />
+        <Tools />
+        <Contact />
+     </main>
+        <Footer />
     </>
   )
 }
