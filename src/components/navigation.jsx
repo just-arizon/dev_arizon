@@ -90,6 +90,7 @@ function Navigation() {
               </DrawerContent>
             </Drawer>
           </div>
+            <ModeToggle className="ml-4" />
         </div>
       </header>
     </>
