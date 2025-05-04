@@ -23,7 +23,7 @@ function Navigation() {
   return (
     <>
       {/* Header */}
-      <header className="container border-b border-black/10 py-4 lg:px-20 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-10">
+      <header className="flex border-b border-black/10 py-4 lg:px-20 px-5 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-10">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold flex items-center gap-2">
             <Terminal className="h-5 w-5" />
@@ -44,6 +44,8 @@ function Navigation() {
             ))}
           </nav>
 
+          <div className="flex gap-2">
+        <ModeToggle className="" />     
 
           <div className="lg:hidden md:hidden">
             <Drawer className="">
@@ -90,8 +92,10 @@ function Navigation() {
               </DrawerContent>
             </Drawer>
           </div>
-            <ModeToggle className="ml-4" />
         </div>
+
+        </div>
+        
       </header>
     </>
   );

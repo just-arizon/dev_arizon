@@ -5,7 +5,7 @@ import { Terminal, Code, Github, Linkedin, Mail, ExternalLink } from "lucide-rea
 
 const hero = () => {
   return (
-    <section className="pt-32 lg:pt-40 lg:p-20 py-8 border-b border-black/10 bg-gradient-to-br from-white via-slate-50 to-gray-100 dark:bg-gradient-to-br dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+    <section className="pt-32 lg:pt-40 lg:p-20 py-8 border-b border-black/10  ">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
             <div className="space-y-2">
@@ -45,14 +45,14 @@ const hero = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-gray-50 to-white border border-black/10 rounded-lg p-6 relative shadow-sm">
+          <div className="bg-card bg-gradient-to-br from-gray-50 to-white border border-black/10 rounded-lg p-6 relative shadow-sm">
             <div className="flex items-center gap-2 mb-4 border-b border-black/10 pb-2">
               <div className="w-3 h-3 rounded-full bg-gray-400"></div>
               <div className="w-3 h-3 rounded-full bg-gray-400"></div>
               <div className="w-3 h-3 rounded-full bg-gray-400"></div>
               <span className="text-xs text-gray-600 ml-2">terminal</span>
             </div>
-            <div className="font-mono text-sm space-y-2">
+            <div className="font-mono text-sm space-y-2 dark:text-gray-800">
               <p>
                 <span className="text-gray-500">$</span> Hello, World!
               </p>
@@ -66,9 +66,9 @@ const hero = () => {
                 <span className="text-gray-500">$</span> <span className="ml-1 animate-pulse">_</span>
               </p>
             </div>
-            <div className="absolute -bottom-4 -right-4 w-20 h-20 border border-black/10 rounded-lg bg-gradient-to-br from-white to-gray-50 grid place-items-center shadow-sm">
+            {/* <div className="absolute -bottom-4 -right-4 w-20 h-20 border border-black/10 rounded-lg bg-gradient-to-br from-white to-gray-50 grid place-items-center shadow-sm">
               <Code className="w-8 h-8" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

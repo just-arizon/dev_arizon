@@ -9,7 +9,7 @@ import {
   
 const About = () => {
   return (
-    <section id="about" className="py-20 border-b border-black/10">
+    <section id="about" className="py-20 border-b border-black/10 ">
     <div className="container mx-auto px-4">
       <div className="flex items-center gap-2 mb-12">
         <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12"></div>
@@ -48,7 +48,7 @@ const About = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="bg-gradient-to-br from-white to-blue-50/30 border-black/10 shadow-sm">
+          <Card className="dark:bg-[#000] bg-gradient-to-br from-white to-blue-50/30 border-black/10 shadow-sm">
             <CardContent className="p-6">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-50 to-white rounded-lg mb-4 grid place-items-center border border-black/5">
                 <Code className="w-6 h-6" />
