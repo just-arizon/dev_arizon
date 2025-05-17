@@ -53,7 +53,7 @@ const About = () => {
           <div className="h-px bg-gradient-to-r from-black/20  to-transparent flex-grow" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-16">
           {/* Left section */}
           <div className="space-y-6">
             <p className="text-gray-600">
