@@ -17,7 +17,7 @@ const Hero = () => {
               Developer_
             </h1>
           </div>
-          <p className="text-gray-600 max-w-md">
+          <p className="text-gray-600 max-w-md dark:text-gray-400">
             Building digital experiences with clean code and innovative
             solutions. Specialized in React, Next.js, and modern web
             technologies.

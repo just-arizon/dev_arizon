@@ -23,7 +23,7 @@ function Navigation() {
   return (
     <>
       {/* Header */}
-      <header className="flex border-b border-black/10 py-4 lg:px-20 px-5 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-10">
+      <header className="flex border-b border-black/10 py-4 lg:px-20 px-5 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-50">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold flex items-center gap-2">
             <Terminal className="h-5 w-5" />

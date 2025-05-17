@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 mb-12">
-            <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12"></div>
+            <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12 dark:to-white "></div>
             <h2 className="font-clash text-2xl font-bold">Contact</h2>
             <div className="h-px bg-gradient-to-r from-black/20 to-transparent flex-grow"></div>
           </div>
@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="space-y-6">
               <h3 className="text-xl font-bold">Get In Touch</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-400">
                 I'm currently available for freelance work and full-time positions. If you have a project that needs
                 some creative coding, let's talk!
               </p>
@@ -52,48 +52,49 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-gray-50 border border-black/10 rounded-lg p-6 shadow-sm">
+            <div className="border border-black/10 rounded-lg p-6 shadow-sm dark:bg-[#262626]">
               <form className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm text-gray-600">
+                    <label htmlFor="name" className="dark:text-gray-400 text-sm text-gray-600">
                       Name
                     </label>
                     <input
                       id="name"
                       type="text"
-                      className="w-full bg-white border border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
+                      className="dark:bg-[#262626] dark:border-white/20 w-full bg-white border border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm text-gray-600">
+                    <label htmlFor="email" className="dark:text-gray-400 text-sm text-gray-600">
                       Email
                     </label>
                     <input
                       id="email"
                       type="email"
-                      className="w-full bg-white border border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
+                      className="dark:bg-[#262626] w-full bg-white border dark:border-white/20 border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
                     />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm text-gray-600">
+                  <label htmlFor="subject" className="dark:text-gray-400 text-sm text-gray-600">
                     Subject
                   </label>
                   <input
                     id="subject"
                     type="text"
-                    className="w-full bg-white border border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
+                    className="dark:bg-[#262626]
+                    w-full bg-white border border-black/20 dark:border-white/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm text-gray-600">
+                  <label htmlFor="message" className="dark:text-gray-400 text-sm text-gray-600">
                     Message
                   </label>
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full bg-white border border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
+                    className="dark:bg-[#262626]  w-full dark:border-white/20 bg-white border border-black/20 rounded-md p-2 text-sm focus:outline-none focus:ring-1 focus:ring-black"
                   ></textarea>
                 </div>
                 <Button className="w-full bg-gradient-to-r from-gray-900 to-black text-white hover:from-black hover:to-gray-800">

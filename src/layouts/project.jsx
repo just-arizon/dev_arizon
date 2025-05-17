@@ -53,7 +53,7 @@ const Projects = () => {
     <section id="projects" className="py-20 border-b border-black/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center gap-2 mb-12">
-          <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12" />
+          <div className="h-px bg-gradient-to-r from-transparent to-black/20 dark:to-white w-12 " />
           <h2 className="font-clash text-2xl font-bold">Projects</h2>
           <div className="h-px bg-gradient-to-r from-black/20 to-transparent flex-grow" />
         </div>

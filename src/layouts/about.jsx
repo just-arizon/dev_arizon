@@ -56,12 +56,12 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16">
           {/* Left section */}
           <div className="space-y-6">
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-400">
               I'm a full-stack developer with a passion for building modern web applications. With a background in
               computer science and years of industry experience, I specialize in creating responsive, user-friendly
               interfaces and robust backend systems.
             </p>
-            <p className="text-gray-600">
+            <p className="text-gray-600 dark:text-gray-400">
               My approach combines technical expertise with creative problem-solving, allowing me to deliver solutions
               that are both innovative and practical.
             </p>

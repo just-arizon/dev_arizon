@@ -26,7 +26,7 @@ function ProjectCard({ title, type, description, technologies, imageUrl, project
           <Badge variant="outline" className="border-black/20 text-xs bg-gradient-to-r from-gray-50 to-white dark:text-[#262626]">{type}</Badge>
         </div>
 
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">{description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map(tech => (
@@ -35,14 +35,14 @@ function ProjectCard({ title, type, description, technologies, imageUrl, project
         </div>
 
         <div className="flex justify-between">
-          <Button variant="ghost" size="sm" className="text-xs p-0 h-auto hover:bg-transparent hover:text-gray-600">
+          <Button variant="ghost" size="sm" className="text-xs p-0 h-auto hover:bg-transparent hover:text-gray-600 dark:hover:text-gray-400">
             View Details
           </Button>
           <a
             href={projectUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-black transition-colors"
+            className="text-gray-600 dark:hover:text-gray-400 hover:text-black transition-colors"
           >
             <ExternalLink className="h-4 w-4" />
             <span className="sr-only">Visit Project</span>
