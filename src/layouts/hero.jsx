@@ -67,14 +67,14 @@ const Hero = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   className="flex justify-center"
 >
-  <div className="dark:card-wrapper bg-slate-100 w-full max-w-3xl h-auto rounded-lg">
+  <div className="dark:card-wrapper bg-slate-200 w-full max-w-3xl h-auto rounded-lg">
     <div className="card-inner ">
       
       <div className="flex items-center gap-2 mb-4 border-b border-gray-500/20 pb-2">
         <div className="w-3 h-3 rounded-full bg-gray-400"></div>
         <div className="w-3 h-3 rounded-full bg-gray-400"></div>
         <div className="w-3 h-3 rounded-full bg-gray-400"></div>
-        <span className="text-xs text-gray-300 ml-2">terminal</span>
+        <span className="text-xs dark:text-gray-300 light:text-gray-500 ml-2">terminal</span>
       </div>
 
     

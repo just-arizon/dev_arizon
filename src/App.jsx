@@ -17,7 +17,7 @@ function App() {
        <Hero />
      <main className="lg:mx-20">
        <About />
-       <Experience />
+       {/* <Experience /> */}
         <Projects />
         <Tools />
         <Contact />

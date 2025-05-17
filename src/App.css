@@ -90,8 +90,8 @@
     inset: 0;
     z-index: 0;
     background: conic-gradient(
-      rgba(244, 114, 182, 0.85),
-      rgba(192, 132, 252, 0.85),
+      #f472b6d9,
+      #c084fcd9,
       transparent 100deg
     );
     animation: spin 5s linear infinite;
