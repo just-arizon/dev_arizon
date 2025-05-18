@@ -64,9 +64,11 @@ function Navigation() {
                 </DrawerHeader>
                 <nav className="flex flex-col gap-4 p-4">
                   <DrawerClose asChild>
-                    <HashLink smooth to="/#about" className="text-base hover:underline">
-                      About
-                    </HashLink>
+                    <Button asChild  className="text-base hover:underline">
+                      <HashLink smooth to="/#about">
+                        About
+                      </HashLink>
+                    </Button>
                   </DrawerClose>
                   <DrawerClose asChild>
                     <HashLink smooth to="/#projects" className="text-base hover:underline">
