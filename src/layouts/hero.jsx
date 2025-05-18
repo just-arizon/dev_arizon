@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
   return (
@@ -23,14 +24,19 @@ const Hero = () => {
             technologies.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <Button className="bg-gradient-to-r from-gray-900 to-black text-white hover:from-black hover:to-gray-800">
-              View Projects
+            <Button 
+            asChild
+            className="bg-gradient-to-r from-gray-900 to-black text-white hover:from-black hover:to-gray-800">
+             
+              <HashLink smooth to="/#projects"> View Projects</HashLink>
+
             </Button>
             <Button
+            asChild
               variant="outline"
               className="border-black/20 hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100 dark:hover:text-slate-800"
             >
-              Contact Me
+              <HashLink smooth to="/#contact">Contact Me</HashLink>
             </Button>
           </div>
           <div className="flex gap-4 pt-4">

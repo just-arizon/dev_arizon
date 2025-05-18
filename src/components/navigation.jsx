@@ -18,6 +18,8 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { HashLink } from 'react-router-hash-link';
+
 
 function Navigation() {
   return (
@@ -25,22 +27,22 @@ function Navigation() {
       {/* Header */}
       <header className="flex border-b border-black/10 py-4 lg:px-20 px-5 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold flex items-center gap-2">
+          <HashLink smooth to="/" className="text-xl font-bold flex items-center gap-2">
             <Terminal className="h-5 w-5" />
             <Avatar>
               <AvatarImage src={Logo} alt="@shadcn" />
               <AvatarFallback>AR</AvatarFallback>
             </Avatar>
-          </Link>
+          </HashLink>
           <nav className="hidden md:flex gap-6">
-            {["About", "Projects", "Skills", "Contact"].map((item) => (
-              <Link
+            {["about", "projects", "skills", "contact"].map((item) => (
+              <HashLink
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                smooth to={`/#${item.toLowerCase()}`}
                 className="text-sm uppercase tracking-wider hover:text-gray-600 transition-colors"
               >
                 {item}
-              </Link>
+              </HashLink>
             ))}
           </nav>
 
@@ -62,24 +64,24 @@ function Navigation() {
                 </DrawerHeader>
                 <nav className="flex flex-col gap-4 p-4">
                   <DrawerClose asChild>
-                    <Link href="/" className="text-base hover:underline">
+                    <HashLink smooth to="/#about" className="text-base hover:underline">
                       About
-                    </Link>
+                    </HashLink>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/project" className="text-base hover:underline">
+                    <HashLink smooth to="/#project" className="text-base hover:underline">
                       Project
-                    </Link>
+                    </HashLink>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/tools" className="text-base hover:underline">
+                    <HashLink smooth to="/#tools" className="text-base hover:underline">
                       Tools
-                    </Link>
+                    </HashLink>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <Link href="/contact" className="text-base hover:underline">
+                    <HashLink smooth to="/#contact" className="text-base hover:underline">
                       Contact
-                    </Link>
+                    </HashLink>
                   </DrawerClose>
                 </nav>
                 <DrawerFooter className="mt-auto">
