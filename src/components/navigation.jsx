@@ -69,12 +69,12 @@ function Navigation() {
                     </HashLink>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <HashLink smooth to="/#project" className="text-base hover:underline">
+                    <HashLink smooth to="/#projects" className="text-base hover:underline">
                       Project
                     </HashLink>
                   </DrawerClose>
                   <DrawerClose asChild>
-                    <HashLink smooth to="/#tools" className="text-base hover:underline">
+                    <HashLink smooth to="/#skills" className="text-base hover:underline">
                       Tools
                     </HashLink>
                   </DrawerClose>
