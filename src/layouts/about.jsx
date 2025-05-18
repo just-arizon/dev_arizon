@@ -85,7 +85,7 @@ const About = () => {
             {cardData.map((card, idx) => (
               <Card
                 key={idx}
-                className={`bg-gradient-to-br light:from-white light:to-blue-50/30 border-black/10 shadow-sm dark:bg-[#262626] dark:border-white dark:border-1 bg-slate-100`}
+                className={`bg-gradient-to-r from-gray-900 to-black border-black/10 shadow-sm dark:bg-[#262626] dark:border-slate-700 dark:border-1 bg-slate-100`}
               >
                 <CardContent className="p-6">
                   <div className={`w-12 h-12 bg-gradient-to-br ${card.bgFrom} to-white rounded-lg mb-4 grid dark:text-black place-items-center border border-black/5`}>

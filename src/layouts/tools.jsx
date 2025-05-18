@@ -68,16 +68,18 @@ const Tools = () => {
 
               {Object.entries(skills).map(([category, tools]) => (
                 <TabsContent key={category} value={category}>
-                  <div className="flex flex-wrap gap-2">
-                    {tools.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="outline"
-                        className="border-black/20 py-1.5"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
+                  <div className="flex flex-wrap ">
+                    <div className="flex flex-wrap gap-2 lg:mt-2 md:mt-4 mt-10 ">
+                      {tools.map((skill) => (
+                        <Badge
+                          key={skill}
+                          variant="outline"
+                          className="border-black/20 py-1.5"
+                        >
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </TabsContent>
               ))}

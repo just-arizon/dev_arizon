@@ -28,7 +28,7 @@ const Hero = () => {
             </Button>
             <Button
               variant="outline"
-              className="border-black/20 hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100"
+              className="border-black/20 hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100 dark:hover:text-slate-800"
             >
               Contact Me
             </Button>
