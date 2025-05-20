@@ -63,22 +63,24 @@ function Navigation() {
                   <DrawerTitle className="text-xl font-bold">Menu</DrawerTitle>
                 </DrawerHeader>
                 <nav className="flex flex-col gap-4 p-4">
-                  <DrawerClose asChild>
-                    <a href="/#about" className="text-base hover:underline">
-                      About
-                    </a>
+                  <DrawerClose>
+                    <Button asChild>
+                      <HashLink smooth to="/#about" className="text-base hover:underline">
+                        About
+                      </HashLink>
+                    </Button>
                   </DrawerClose>
-                  <DrawerClose asChild>
+                  <DrawerClose>
                     <HashLink smooth to="/#projects" className="text-base hover:underline">
                       Project
                     </HashLink>
                   </DrawerClose>
-                  <DrawerClose asChild>
+                  <DrawerClose>
                     <HashLink smooth to="/#skills" className="text-base hover:underline">
                       Tools
                     </HashLink>
                   </DrawerClose>
-                  <DrawerClose asChild>
+                  <DrawerClose>
                     <HashLink smooth to="/#contact" className="text-base hover:underline">
                       Contact
                     </HashLink>
