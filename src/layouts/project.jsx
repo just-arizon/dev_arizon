@@ -6,7 +6,7 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs";
 import ProjectCard from "@/components/projectCard";
-import IdleFarmerImg from "../assets/images/idlefarmer-logo.jpg";
+import IdleFarmerImg from "../assets/images/idlefarmer.jpg";
 import DoraImg from "../assets/images/dora.png";
 import ElneemaImg from "../assets/images/elneema.png";
 import MybuddyImg from "../assets/images/mybuddy.png";
