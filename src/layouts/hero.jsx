@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, FileDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { HashLink } from 'react-router-hash-link';
 
@@ -41,25 +41,25 @@ const Hero = () => {
           </div>
           <div className="flex gap-4 pt-4">
             <Link
-              to="#"
-              className="text-gray-600 hover:text-black transition-colors"
+              to="https://github.com/just-arizon"
+              className="text-gray-600 hover:text-[#c084fcd9] transition-colors"
             >
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              to="#"
-              className="text-gray-600 hover:text-black transition-colors"
+              to="https://www.linkedin.com/in/arinze-calistus/"
+              className="text-gray-600 hover:text-[#c084fcd9] transition-colors"
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
               to="#"
-              className="text-gray-600 hover:text-black transition-colors"
+              className="text-gray-600 hover:text-[#c084fcd9] transition-colors"
             >
-              <Mail className="h-5 w-5" />
-              <span className="sr-only">Email</span>
+              <FileDown className="h-5 w-5" />
+              <span className="sr-only">Resume</span>
             </Link>
           </div>
         </div>

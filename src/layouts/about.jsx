@@ -67,8 +67,8 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {[
-                { label: "LOCATION", value: "San Francisco, CA" },
-                { label: "EXPERIENCE", value: "5+ Years" },
+                { label: "LOCATION", value: "Anambra State, Nigeria" },
+                { label: "EXPERIENCE", value: "3+ Years" },
                 { label: "AVAILABILITY", value: "Freelance / Full-time" },
                 { label: "REMOTE", value: "Available" },
               ].map((item, index) => (

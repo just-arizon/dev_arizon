@@ -59,16 +59,14 @@ function Navigation() {
                 </Button>
               </DrawerTrigger>
               <DrawerContent >
-                <DrawerHeader className="text-left">
+                <DrawerHeader className="text-center">
                   <DrawerTitle className="text-xl font-bold">Menu</DrawerTitle>
                 </DrawerHeader>
                 <nav className="flex flex-col gap-4 p-4">
                   <DrawerClose>
-                    <Button asChild>
-                      <HashLink smooth to="/#about" className="text-base hover:underline">
+                      <HashLink smooth to="/#about" className="text-left hover:underline">
                         About
                       </HashLink>
-                    </Button>
                   </DrawerClose>
                   <DrawerClose>
                     <HashLink smooth to="/#projects" className="text-base hover:underline">
