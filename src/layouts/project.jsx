@@ -6,7 +6,7 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs";
 import ProjectCard from "@/components/projectCard";
-import IdleFarmerImg from "../assets/images/idlefarmer.jpg";
+import idleFarmerImg from "../assets/images/idlefarmer.jpg";
 import DoraImg from "../assets/images/dora.png";
 import ElneemaImg from "../assets/images/elneema.png";
 import MybuddyImg from "../assets/images/mybuddy.png";
@@ -18,7 +18,8 @@ const projectData = [
     type: "Web",
     description: "Empowering farmers with a web-based idle farming simulator and giving them access to tractors, bulk inputs and farm support.",
     technologies: ["React", "TailwindCSS", "Vite"],
-    imageUrl: IdleFarmerImg,
+    imageUrl: <img src={idleFarmerImg} alt="Idle Farmer" />
+,
     projectUrl: "https://your-portfolio.com",
   },
   {
