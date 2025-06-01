@@ -14,9 +14,9 @@ function ProjectCard({ title, type, description, technologies, imageUrl, project
           <img
             src={imageUrl || "/placeholder.svg?height=300&width=500"}
             alt={`${title} thumbnail`}
-            className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+            className="w-full h-full object-cover "
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent"></div> */}
         </div>
       </div>
 

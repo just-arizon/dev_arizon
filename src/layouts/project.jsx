@@ -6,22 +6,51 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs";
 import ProjectCard from "@/components/projectCard";
+import IdleFarmerImg from "../assets/images/idlefarmer-logo.jpg";
+import DoraImg from "../assets/images/dora.png";
+import ElneemaImg from "../assets/images/elneema.png";
+import MybuddyImg from "../assets/images/mybuddy.png";
+import MymindspaceImg from "../assets/images/mymindspace.png";
 
 const projectData = [
   {
-    title: "Dev Portfolio",
+    title: "IdleFarmer",
     type: "Web",
-    description: "A personal developer portfolio built with React and TailwindCSS.",
+    description: "Empowering farmers with a web-based idle farming simulator and giving them access to tractors, bulk inputs and farm support.",
     technologies: ["React", "TailwindCSS", "Vite"],
-    imageUrl: "/images/portfolio.png",
+    imageUrl: IdleFarmerImg,
     projectUrl: "https://your-portfolio.com",
   },
   {
-    title: "E-Commerce App",
+    title: "Use-Dora",
+    type: "Web",
+    description: "Crafting unique trips that blend adventure and culture, Use-Dora is a web platform that connects travelers with local guides.",
+    technologies: ["React", "TailwindCSS", "Vite"],
+    imageUrl: DoraImg,
+    projectUrl: "https://your-portfolio.com",
+  },
+  {
+    title: "El-Neema Care Initiative",
+    type: "Web",
+    description: "El-Neema is an NGO platform that takes care of children especially girls to eradicate period poverty and also educate them on how to take care of their mentral hygiene.",
+    technologies: ["React", "TailwindCSS", "Vite"],
+    imageUrl: ElneemaImg,
+    projectUrl: "https://your-portfolio.com",
+  },
+  {
+    title: "My Mind Space",
+    type: "Web",
+    description: "My Mind Space is a web application designed to help users manage their mental health and well-being through journaling, mood tracking, and mindfulness exercises.",
+    technologies: ["React", "TailwindCSS", "Vite"],
+    imageUrl: MymindspaceImg,
+    projectUrl: "https://your-portfolio.com",
+  },
+  {
+    title: "MyBuddy App",
     type: "Mobile",
     description: "Cross-platform shopping app built with React Native and Firebase.",
     technologies: ["React Native", "Firebase"],
-    imageUrl: "/images/ecommerce.png",
+    imageUrl: MybuddyImg,
     projectUrl: "https://ecommerce-app.com",
   },
   {
