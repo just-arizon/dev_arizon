@@ -65,7 +65,7 @@ const Hero = () => {
         </div>
 
      {/* Terminal Card */}
-<div className="flex justify-center">
+<div className="flex justify-center mt-8">
  {/* Terminal Card with Conic Gradient Border */}
 <motion.div
   initial={{ opacity: 0, y: 30 }}
