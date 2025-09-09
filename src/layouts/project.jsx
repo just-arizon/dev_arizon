@@ -19,7 +19,7 @@ const projectData = [
     description: "Empowering farmers with a web-based idle farming simulator and giving them access to tractors, bulk inputs and farm support.",
     technologies: ["React", "TailwindCSS", "Vite"],
     imageUrl: IdleFarmerImg,
-    projectUrl: "https://your-portfolio.com",
+    projectUrl: "https://www.idlefarmer.africa/",
   },
   {
     title: "Use-Dora",
@@ -35,7 +35,7 @@ const projectData = [
     description: "El-Neema is an NGO platform that takes care of children especially girls to eradicate period poverty and also educate them on how to take care of their mentral hygiene.",
     technologies: ["React", "TailwindCSS", "Vite"],
     imageUrl: ElneemaImg,
-    projectUrl: "https://your-portfolio.com",
+    projectUrl: "https://www.elneemacaresinitiative.org/",
   },
   {
     title: "My Mind Space",
@@ -43,7 +43,7 @@ const projectData = [
     description: "My Mind Space is a web application designed to help users manage their mental health and well-being through journaling, mood tracking, and mindfulness exercises.",
     technologies: ["React", "TailwindCSS", "Vite"],
     imageUrl: MymindspaceImg,
-    projectUrl: "https://your-portfolio.com",
+    projectUrl: "https://my-mynd-space.vercel.app/",
   },
   {
     title: "MyBuddy App",
