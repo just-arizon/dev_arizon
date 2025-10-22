@@ -49,8 +49,8 @@ const Hero = () => {
                 strings={[
                   "Developer",
                   "Engineer",
-                  "Tech Enthusiast",
-                  "Tech Educator",
+                  "web3",
+                  "Tech Tutor",
                 ]}
                 typeSpeed={60}
                 backSpeed={40}
