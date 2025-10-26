@@ -9,7 +9,8 @@ import ProjectCard from "@/components/projectCard";
 import IdleFarmerImg from "../assets/images/idlefarmer.png";
 import DoraImg from "../assets/images/dora.png";
 import ElneemaImg from "../assets/images/elneema.png";
-import MybuddyImg from "../assets/images/mybuddy.png";
+import KreaImg from "../assets/images/krea.png";
+import NabetoImg from "../assets/images/nabeto.png";
 import MymindspaceImg from "../assets/images/mymindspace.png";
 
 const projectData = [
@@ -46,20 +47,20 @@ const projectData = [
     projectUrl: "https://my-mynd-space.vercel.app/",
   },
   {
-    title: "MyBuddy App",
-    type: "Mobile",
-    description: "Cross-platform shopping app built with React Native and Firebase.",
-    technologies: ["React Native", "Firebase"],
-    imageUrl: MybuddyImg,
-    projectUrl: "https://ecommerce-app.com",
+    title: "Krea AI",
+    type: "Web",
+    description: "Clone built for practice",
+    technologies: ["NextJS", "Typescript"],
+    imageUrl: KreaImg,
+    projectUrl: "https://krea-ai-clone-seven.vercel.app",
   },
   {
-    title: "Task Tracker",
-    type: "Other",
-    description: "A simple task tracking app with local storage support.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/images/tasks.png",
-    projectUrl: "https://task-tracker.dev",
+    title: "Nabeto Engineering Limited",
+    type: "Web",
+    description: "Enginering, Procurement and Construction service company.",
+    technologies: ["React", "Tailwind", "Typescript"],
+    imageUrl: NabetoImg,
+    projectUrl: "https://nabetoengineering.com",
   },
 ];
 
