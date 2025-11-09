@@ -5,7 +5,7 @@ const AboutCarousel = () => {
   const text = "What are your needs...";
   
   return (
-    <div className="mt-20 overflow-hidden bg-[#c084fcd9] py-4  rotate-2">
+    <div className="mt-20 overflow-hidden bg-[#c084fcd9] py-4  lg:rotate-2 rotate-4">
       {/* Scrolling Text Container */}
       <motion.div 
         className="flex"

@@ -12,13 +12,15 @@ import VideoFrame from "./components/videoframe";
 import AboutCarousel from "./components/about-carousel";
 import ProjectCarousel from "./components/project-carousel";
 import SkillCarousel from "./components/skills-carousel";
+import HomeCarousel from "./components/home-carousel";
 
 function App() {
 
   return (
     <>
      <Navigation />
-      <VideoFrame />
+      {/* <VideoFrame /> */}
+      <HomeCarousel />
        <Hero />
        <AboutCarousel />
        <About />
