@@ -13,6 +13,7 @@ import AboutCarousel from "./components/about-carousel";
 import ProjectCarousel from "./components/project-carousel";
 import SkillCarousel from "./components/skills-carousel";
 import HomeCarousel from "./components/home-carousel";
+import ContactCarousel from "./components/contact-carousel";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Projects />
         <SkillCarousel />
         <Tools />
+        <ContactCarousel />
         <Contact />
         <Footer />
     </>
