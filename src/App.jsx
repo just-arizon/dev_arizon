@@ -10,6 +10,7 @@ import Tools from "./layouts/tools"
 import Footer from "./layouts/footer"
 import VideoFrame from "./components/videoframe";
 import AboutCarousel from "./components/about-carousel";
+import ProjectCarousel from "./components/project-carousel";
 
 function App() {
 
@@ -19,13 +20,12 @@ function App() {
       <VideoFrame />
        <Hero />
        <AboutCarousel />
-        <main className="lg:mx-20">
        <About />
        {/* <Experience /> */}
+       <ProjectCarousel />
         <Projects />
         <Tools />
         <Contact />
-     </main>
         <Footer />
     </>
   )

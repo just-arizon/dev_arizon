@@ -45,7 +45,7 @@ const cardData = [
 
 const About = () => {
   return (
-    <section id="about" className="py-10 border-b border-black/10">
+    <section id="about" className="lg:px-20 py-10 border-b border-black/10">
       <div className="container mx-auto">
         <div className="flex items-center gap-2 mb-12 ">
           <div className="h-px bg-gradient-to-r from-transparent to-black/20 dark:to-white w-12" />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Terminal, Code, Github, Linkedin, Mail, ExternalLink } from "lucide-react"
 const Contact = () => {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 lg:px-20 ">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 mb-12">
             <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12 dark:to-white "></div>
