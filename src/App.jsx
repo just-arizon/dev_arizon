@@ -9,6 +9,7 @@ import Contact from "./layouts/contact"
 import Tools from "./layouts/tools"
 import Footer from "./layouts/footer"
 import VideoFrame from "./components/videoframe";
+import AboutCarousel from "./components/about-carousel";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
      <Navigation />
       <VideoFrame />
        <Hero />
+       <AboutCarousel />
         <main className="lg:mx-20">
        <About />
        {/* <Experience /> */}

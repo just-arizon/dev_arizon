@@ -11,7 +11,7 @@ const VideoFrame = ({
 
   return (
     <>
-      <div className="relative top-20 px-4 container">
+      <div className="relative top-20 px-4">
         {/* Video Wrapper - Expands on hover */}
         <div 
           className={`
@@ -28,7 +28,7 @@ const VideoFrame = ({
           {/* Blurry Gradient Background (using your exact color #C084FC) */}
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 via-[#C084FC]/40 to-purple-600/20"></div>
-            <div className="absolute inset-0 backdrop-blur-2xl"></div>
+            <div className="absolute inset-0 backdrop-blur-3xl"></div>
           </div>
           
           {/* Video Thumbnail Preview */}
