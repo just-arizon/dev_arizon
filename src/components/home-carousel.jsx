@@ -5,7 +5,7 @@ const HomeCarousel = () => {
   const text = "Personal Portfolio";
   
   return (
-    <div className="relative top-20 overflow-hidden bg-white py-4  lg:-rotate-2 -rotate-4">
+    <div className="relative top-20 overflow-hidden bg-white py-4  lg:-rotate-2 -rotate-3">
       {/* Scrolling Text Container */}
       <motion.div 
         className="flex"

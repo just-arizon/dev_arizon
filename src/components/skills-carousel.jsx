@@ -5,7 +5,7 @@ const SkillCarousel = () => {
   const text = "What do you think ???";
   
   return (
-    <div className="mt-20 overflow-hidden bg-[#ff542E] py-4  lg:rotate-2 rotate-4">
+    <div className="mt-20 overflow-hidden bg-[#ff542E] py-4  lg:rotate-2 rotate-3">
       {/* Scrolling Text Container */}
       <motion.div 
         className="flex"

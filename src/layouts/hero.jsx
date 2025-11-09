@@ -162,7 +162,7 @@ const Hero = () => {
             <div className="z-50 absolute inset-0 pointer-events-none">
               {/* Star 1 - Top Left */}
               <motion.div
-                className="absolute top-20 "
+                className="absolute top-20 lg:left-0 left-12"
                 animate={{ y: [0, 10, 0] }}
                 transition={{
                   duration: 3,
@@ -176,7 +176,7 @@ const Hero = () => {
 
               {/* Star 2 - Top Right */}
               <motion.div
-                className="absolute -top-8 -right-8"
+                className="absolute -top-8 lg:-right-8 right-12"
                 animate={{ y: [10, -10, 10] }}
                 transition={{
                   duration: 3.5,
@@ -201,7 +201,7 @@ const Hero = () => {
 
               {/* Star 3 - Bottom Left */}
               <motion.div
-                className="absolute -bottom-8 -left-8"
+                className="absolute -bottom-8 lg:-left-8 left-12"
                 animate={{ y: [-15, 15, -15] }}
                 transition={{
                   duration: 4,

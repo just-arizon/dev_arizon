@@ -38,7 +38,7 @@ const Tools = () => {
   }
 
   return (
-    <section id="skills" className="lg:px-20 py-20 border-b border-black/10">
+    <section id="skills" className="lg:px-20 pt-10 pb-20 border-b border-black/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center gap-2 mb-12">
           <div className="h-px bg-gradient-to-r from-transparent to-black/20 w-12 dark:to-white" />
