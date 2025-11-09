@@ -11,6 +11,7 @@ import Footer from "./layouts/footer"
 import VideoFrame from "./components/videoframe";
 import AboutCarousel from "./components/about-carousel";
 import ProjectCarousel from "./components/project-carousel";
+import SkillCarousel from "./components/skills-carousel";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
        {/* <Experience /> */}
        <ProjectCarousel />
         <Projects />
+        <SkillCarousel />
         <Tools />
         <Contact />
         <Footer />
