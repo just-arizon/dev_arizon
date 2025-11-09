@@ -113,4 +113,14 @@
  
   }
 }
-
+.cursors-wrapper .move-up{
+    animation: move 5s linear infinite;
+}
+@keyframes move {
+  0%{
+    bottom: 0;
+  }
+  25%{
+    bottom: 10;
+  }
+}

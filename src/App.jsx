@@ -8,14 +8,16 @@ import Projects from "./layouts/project";
 import Contact from "./layouts/contact"
 import Tools from "./layouts/tools"
 import Footer from "./layouts/footer"
+import VideoFrame from "./components/videoframe";
 
 function App() {
 
   return (
     <>
      <Navigation />
+      <VideoFrame />
        <Hero />
-     <main className="lg:mx-20">
+        <main className="lg:mx-20">
        <About />
        {/* <Experience /> */}
         <Projects />
