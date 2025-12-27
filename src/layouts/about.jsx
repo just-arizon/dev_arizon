@@ -84,14 +84,24 @@ const About = () => {
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4">
             <span className="absolute right-16 z-30 -top-12 bg-slate-200">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4em"
-                height="4em"
-                viewBox="0 0 24 24"
-                className="absolute"
-              >
-                <path fill="none" stroke="#c084fcd9" stroke-linejoin="round" stroke-width="2" d="M15 19c1.2-3.678 2.526-5.005 6-6c-3.474-.995-4.8-2.322-6-6c-1.2 3.678-2.526 5.005-6 6c3.474.995 4.8 2.322 6 6Zm-8-9c.6-1.84 1.263-2.503 3-3c-1.737-.497-2.4-1.16-3-3c-.6 1.84-1.263 2.503-3 3c1.737.497 2.4 1.16 3 3Zm1.5 10c.3-.92.631-1.251 1.5-1.5c-.869-.249-1.2-.58-1.5-1.5c-.3.92-.631 1.251-1.5 1.5c.869.249 1.2.58 1.5 1.5Z"/>
-              </svg>
+  xmlns="http://www.w3.org/2000/svg"
+  width="4em"
+  height="4em"
+  viewBox="0 0 784.11 815.53"
+  className="absolute"
+  style={{
+    shapeRendering: 'geometricPrecision',
+    textRendering: 'geometricPrecision',
+    imageRendering: 'optimizeQuality',
+    fillRule: 'evenodd',
+    clipRule: 'evenodd'
+  }}
+>
+  <path
+    className="fil0"
+    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+  />
+</svg>
             </span>
             {cardData.map((card, idx) => (
               

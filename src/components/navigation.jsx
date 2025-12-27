@@ -1,23 +1,14 @@
 // import React from "react";
 // import { Link } from "react-router-dom";
 import { Terminal } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import ResumeBtn from "@/components/ResumeBtn";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-// import { FileDown } from "lucide-react";
+import { FileDown } from "lucide-react";
 
 // import { ModeToggle } from "@/components/mode-toggle";
 import Logo from "../assets/images/pro.jpg";
-// import {
-//   Drawer,
-//   DrawerClose,
-//   DrawerContent,
-//   DrawerDescription,
-//   DrawerFooter,
-//   DrawerHeader,
-//   DrawerTitle,
-//   DrawerTrigger,
-// } from "@/components/ui/drawer";
 import { HashLink } from "react-router-hash-link";
+import resumePDF from "../assets/resume.pdf";
 
 function Navigation() {
   return (
@@ -64,17 +55,9 @@ function Navigation() {
                 </g>
               </svg>
             </span>
-            <div className="relative">
-              <Button asChild className="bg-[#c084fcd9] px-8">
-                <HashLink smooth to="/#">
-                  {" "}
-                  Résumé
-                  {/* <FileDown className="h-5 w-5" />
-                  <span className="sr-only">Resume</span> */}
-                </HashLink>
-              </Button>
-            </div>
-            <span className="relative -right-24 z-30 bottom-3">
+            {/* Resume */}
+            <ResumeBtn />
+            <span className="star-2 relative -right-24 z-30 bottom-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.3em"
