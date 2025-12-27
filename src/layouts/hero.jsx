@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Github, Linkedin, FileDown, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 import { ReactTyped } from "react-typed";
@@ -112,22 +112,15 @@ const Hero = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-youtube-icon lucide-youtube"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-youtube-icon lucide-youtube"
               >
                 <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
                 <path d="m10 15 5-3-5-3z" />
               </svg>
               <span className="sr-only">YouTube</span>
-            </Link>
-            <Link
-              to="#"
-              className="text-gray-600 hover:text-[#c084fcd9] transition-colors"
-            >
-              <FileDown className="h-5 w-5" />
-              <span className="sr-only">Resume</span>
             </Link>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Terminal, Code } from "lucide-react";
@@ -7,7 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 const cardData = [
   {
     title: "Frontend",
-    description: "Creating responsive and intuitive user interfaces with modern frameworks.",
+    description:
+      "Creating responsive and intuitive user interfaces with modern frameworks.",
     icon: <Code className="w-6 h-6" />,
     bgFrom: "from-blue-50",
   },
@@ -19,9 +20,15 @@ const cardData = [
   },
   {
     title: "UI/UX",
-    description: "Designing clean, intuitive interfaces focused on user experience.",
+    description:
+      "Designing clean, intuitive interfaces focused on user experience.",
     icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        className="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path d="M12 16L7 11L17 11L12 16Z" fill="currentColor" />
         <path d="M12 8L17 13L7 13L12 8Z" fill="currentColor" />
       </svg>
@@ -32,11 +39,44 @@ const cardData = [
     title: "Architecture",
     description: "Designing scalable and maintainable system architectures.",
     icon: (
-      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="3" width="7" height="7" stroke="currentColor" strokeWidth="2" />
-        <rect x="14" y="3" width="7" height="7" stroke="currentColor" strokeWidth="2" />
-        <rect x="3" y="14" width="7" height="7" stroke="currentColor" strokeWidth="2" />
-        <rect x="14" y="14" width="7" height="7" stroke="currentColor" strokeWidth="2" />
+      <svg
+        className="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="3"
+          y="3"
+          width="7"
+          height="7"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+        <rect
+          x="14"
+          y="3"
+          width="7"
+          height="7"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+        <rect
+          x="3"
+          y="14"
+          width="7"
+          height="7"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+        <rect
+          x="14"
+          y="14"
+          width="7"
+          height="7"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
       </svg>
     ),
     bgFrom: "from-rose-50",
@@ -57,15 +97,17 @@ const About = () => {
           {/* Left section */}
           <div className="space-y-6">
             <p className="text-gray-600 dark:text-gray-400">
-              I'm a full-stack developer with a passion for building modern web applications. With a background in
-              computer science and years of industry experience, I specialize in creating responsive, user-friendly
-              interfaces and robust backend systems.
+              I'm a full-stack developer with a passion for building modern web
+              applications. With a background in computer science and years of
+              industry experience, I specialize in creating responsive,
+              user-friendly interfaces and robust backend systems.
             </p>
             <p className="text-gray-600 dark:text-gray-400">
-              My approach combines technical expertise with creative problem-solving, allowing me to deliver solutions
-              that are both innovative and practical.
+              My approach combines technical expertise with creative
+              problem-solving, allowing me to deliver solutions that are both
+              innovative and practical.
             </p>
-            <div className="grid grid-cols-2 gap-4 pt-4">
+            <div className="font-clash grid grid-cols-2 gap-4 pt-4">
               {[
                 { label: "LOCATION", value: "Anambra State, Nigeria" },
                 { label: "EXPERIENCE", value: "3+ Years" },
@@ -79,42 +121,45 @@ const About = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Right cards section */}
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4">
             <span className="absolute right-16 z-30 -top-12 bg-slate-200">
               <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="4em"
-  height="4em"
-  viewBox="0 0 784.11 815.53"
-  className="absolute"
-  style={{
-    shapeRendering: 'geometricPrecision',
-    textRendering: 'geometricPrecision',
-    imageRendering: 'optimizeQuality',
-    fillRule: 'evenodd',
-    clipRule: 'evenodd'
-  }}
->
-  <path
-    className="fil0"
-    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-  />
-</svg>
+                xmlns="http://www.w3.org/2000/svg"
+                width="4em"
+                height="4em"
+                viewBox="0 0 784.11 815.53"
+                className="absolute"
+                style={{
+                  shapeRendering: "geometricPrecision",
+                  textRendering: "geometricPrecision",
+                  imageRendering: "optimizeQuality",
+                  fillRule: "evenodd",
+                  clipRule: "evenodd",
+                }}
+              >
+                <path
+                  className="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                />
+              </svg>
             </span>
             {cardData.map((card, idx) => (
-              
               <Card
                 key={idx}
                 className={`bg-gradient-to-r from-gray-900 to-black border-black/10 shadow-sm dark:bg-[#262626] dark:border-slate-700 dark:border-1 bg-slate-100`}
               >
                 <CardContent className="p-6">
-                  <div className={`w-12 h-12 bg-gradient-to-br ${card.bgFrom} to-white rounded-lg mb-4 grid dark:text-black place-items-center border border-black/5`}>
+                  <div
+                    className={`w-12 h-12 bg-gradient-to-br ${card.bgFrom} to-white rounded-lg mb-4 grid dark:text-black place-items-center border border-black/5`}
+                  >
                     {card.icon}
                   </div>
-                  <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                  <p className="dark:text-white light:text-black text-sm">{card.description}</p>
+                  <h3 className="font-clash text-lg font-bold mb-2">{card.title}</h3>
+                  <p className="dark:text-white light:text-black text-sm">
+                    {card.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}

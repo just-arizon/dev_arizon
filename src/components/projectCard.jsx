@@ -22,7 +22,7 @@ function ProjectCard({ title, type, description, technologies, imageUrl, project
 
       <CardContent className="p-6">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="font-bold text-lg ">{title}</h3>
+          <h3 className="font-clash font-bold text-lg ">{title}</h3>
           <Badge variant="outline" className="border-black/20 text-xs bg-gradient-to-r from-gray-50 to-white dark:text-[#262626]">{type}</Badge>
         </div>
 
