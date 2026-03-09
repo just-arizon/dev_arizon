@@ -1,123 +1,202 @@
-import React from "react";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
-import ProjectCard from "@/components/projectCard";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 import IdleFarmerImg from "../assets/images/idlefarmer.png";
 import DoraImg from "../assets/images/dora.png";
 import ElneemaImg from "../assets/images/elneema.png";
 import KreaImg from "../assets/images/krea.png";
 import NabetoImg from "../assets/images/nabeto.png";
 import MymindspaceImg from "../assets/images/mymindspace.png";
+import MyBuddyImg from "../assets/images/mybuddy.png";
 
-const projectData = [
+const projects = [
   {
     title: "IdleFarmer",
-    type: "Web",
-    description: "Empowering farmers with a web-based idle farming simulator and giving them access to tractors, bulk inputs and farm support.",
-    technologies: ["React", "TailwindCSS", "Vite"],
-    imageUrl: IdleFarmerImg,
-    projectUrl: "https://www.idlefarmer.africa/",
-  },
-  {
-    title: "Use-Dora",
-    type: "Web",
-    description: "Crafting unique trips that blend adventure and culture, Use-Dora is a web platform that connects travelers with local guides.",
-    technologies: ["React", "TailwindCSS", "Vite"],
-    imageUrl: DoraImg,
-    projectUrl: "https://your-portfolio.com",
-  },
-  {
-    title: "El-Neema Care Initiative",
-    type: "Web",
-    description: "El-Neema is an NGO platform that takes care of children especially girls to eradicate period poverty and also educate them on how to take care of their mentral hygiene.",
-    technologies: ["React", "TailwindCSS", "Vite"],
-    imageUrl: ElneemaImg,
-    projectUrl: "https://www.elneemacaresinitiative.org/",
+    category: "Web App",
+    description: "Empowers Nigerian farmers with a web platform connecting them to tractors, bulk inputs, and farm support. Solved the access gap between smallholder farmers and modern agri-tools.",
+    tech: ["React", "TailwindCSS", "Vite"],
+    image: IdleFarmerImg,
+    url: "https://www.idlefarmer.africa/",
+    github: null,
+    featured: true,
   },
   {
     title: "My Mind Space",
-    type: "Web",
-    description: "My Mind Space is a web application designed to help users manage their mental health and well-being through journaling, mood tracking, and mindfulness exercises.",
-    technologies: ["React", "TailwindCSS", "Vite"],
-    imageUrl: MymindspaceImg,
-    projectUrl: "https://my-mynd-space.vercel.app/",
+    category: "Web App",
+    description: "Mental health app for journaling, mood tracking, and mindfulness — built to give users a private, judgment-free space to manage their wellbeing.",
+    tech: ["React", "TailwindCSS", "Vite"],
+    image: MymindspaceImg,
+    url: "https://my-mynd-space.vercel.app/",
+    github: null,
+    featured: true,
   },
   {
-    title: "Krea AI",
-    type: "Web",
-    description: "Clone built for practice",
-    technologies: ["NextJS", "Typescript"],
-    imageUrl: KreaImg,
-    projectUrl: "https://krea-ai-clone-seven.vercel.app",
+    title: "El-Neema Care Initiative",
+    category: "Web App",
+    description: "NGO platform fighting period poverty. Educates young girls on menstrual hygiene and connects them to care resources across Nigeria.",
+    tech: ["React", "TailwindCSS", "Vite"],
+    image: ElneemaImg,
+    url: "https://www.elneemacaresinitiative.org/",
+    github: null,
+    featured: true,
   },
   {
-    title: "Nabeto Engineering Limited",
-    type: "Web",
-    description: "Enginering, Procurement and Construction service company.",
-    technologies: ["React", "Tailwind", "Typescript"],
-    imageUrl: NabetoImg,
-    projectUrl: "https://nabetoengineering.com",
+    title: "Nabeto Engineering",
+    category: "Web App",
+    description: "Corporate website for an EPC (Engineering, Procurement & Construction) services firm — clean, professional, built for credibility.",
+    tech: ["React", "Tailwind", "TypeScript"],
+    image: NabetoImg,
+    url: "https://nabetoengineering.com",
+    github: null,
+    featured: false,
+  },
+  {
+    title: "Use-Dora",
+    category: "Web App",
+    description: "Travel platform connecting adventurers with local guides for unique, culture-rich trips.",
+    tech: ["React", "TailwindCSS", "Vite"],
+    image: DoraImg,
+    url: "https://your-portfolio.com",
+    github: null,
+    featured: false,
+  },
+  {
+    title: "Krea AI Clone",
+    category: "Practice",
+    description: "Pixel-perfect clone of Krea AI's interface, built to sharpen Next.js + TypeScript skills.",
+    tech: ["Next.js", "TypeScript"],
+    image: KreaImg,
+    url: "https://krea-ai-clone-seven.vercel.app",
+    github: null,
+    featured: false,
   },
 ];
 
-const tabs = [
-  { label: "All", value: "all" },
-  { label: "Web", value: "web" },
-  { label: "Mobile", value: "mobile" },
-  { label: "Other", value: "other" },
-];
-
-const filterProjects = (type) =>
-  type === "all"
-    ? projectData
-    : projectData.filter(
-        (project) => project.type.toLowerCase() === type.toLowerCase()
-      );
+const FILTERS = ["All", "Web App", "Practice"];
 
 const Projects = () => {
+  const [active, setActive] = useState("All");
+
+  const filtered = active === "All" ? projects : projects.filter((p) => p.category === active);
+
   return (
-    <section id="projects" className="lg:px-20 py-20 border-b border-black/10">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center gap-2 mb-12">
-          <div className="h-px bg-gradient-to-r from-transparent to-black/20 dark:to-white w-12 " />
-          <h2 className="font-clash text-2xl font-bold">Projects</h2>
-          <div className="h-px bg-gradient-to-r from-black/20 to-transparent flex-grow" />
+    <section id="projects" className="py-24 px-5 lg:px-20 bg-[#0a0a0a] border-t border-white/5">
+      <div className="container mx-auto">
+        {/* Header */}
+        <div className="flex items-center gap-4 mb-12">
+          <div className="h-px bg-gradient-to-r from-transparent to-white/10 w-12" />
+          <h2 className="font-clash text-2xl font-bold text-white tracking-tight">Projects</h2>
+          <div className="h-px bg-gradient-to-r from-white/10 to-transparent flex-grow" />
         </div>
 
-        <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full md:w-auto md:inline-grid grid-cols-4 mb-8 bg-transparent gap-2">
-            {tabs.map((tab) => (
-              <TabsTrigger
-                key={tab.value}
-                value={tab.value}
-                className={`
-                  relative px-4 py-2 rounded-md text-white dark:text-white  dark:bg-[#1a1a1a]
-                  before:absolute before:inset-0 before:rounded-md before:p-[2px] before:z-[-1]
-                  before:bg-none
-                  data-[state=active]:text-white 
-                  data-[state=active]:border-b
-                  data-[state=active]:bg-black text-black
-                `}
-              >
-                {tab.label}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {tabs.map((tab) => (
-            <TabsContent key={tab.value} value={tab.value} className="mt-0">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filterProjects(tab.value).map((project, index) => (
-                  <ProjectCard key={index} {...project} />
-                ))}
-              </div>
-            </TabsContent>
+        {/* Filter tabs */}
+        <div className="flex gap-2 mb-10 flex-wrap">
+          {FILTERS.map((f) => (
+            <button
+              key={f}
+              onClick={() => setActive(f)}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                active === f
+                  ? "bg-[#c084fc] text-black"
+                  : "bg-white/5 text-gray-400 border border-white/10 hover:border-white/20 hover:text-white"
+              }`}
+            >
+              {f}
+            </button>
           ))}
-        </Tabs>
+        </div>
+
+        {/* Grid */}
+        <AnimatePresence mode="popLayout">
+          <motion.div
+            layout
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {filtered.map((project, i) => (
+              <motion.article
+                key={project.title}
+                layout
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ delay: i * 0.06, duration: 0.4 }}
+                className="group bg-white/3 border border-white/8 rounded-2xl overflow-hidden hover:border-[#c084fc]/30 transition-all duration-300 hover:bg-white/5"
+              >
+                {/* Image */}
+                <div className="relative overflow-hidden aspect-video bg-[#111]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-9 h-9 bg-white/90 rounded-full flex items-center justify-center text-black hover:bg-white transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                  {project.featured && (
+                    <span className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-[#c084fc]/20 border border-[#c084fc]/40 text-[#c084fc] text-xs font-medium">
+                      Featured
+                    </span>
+                  )}
+                </div>
+
+                {/* Content */}
+                <div className="p-5">
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="font-clash text-white font-bold text-lg leading-tight">{project.title}</h3>
+                    <span className="text-gray-500 text-xs border border-white/10 px-2 py-0.5 rounded-full shrink-0 ml-2">
+                      {project.category}
+                    </span>
+                  </div>
+
+                  <p className="text-gray-400 text-sm leading-relaxed mb-4">{project.description}</p>
+
+                  {/* Tech stack */}
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {project.tech.map((t) => (
+                      <span
+                        key={t}
+                        className="text-xs px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-gray-300"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Links */}
+                  <div className="flex items-center gap-3 pt-1 border-t border-white/5">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-xs text-[#c084fc] hover:text-violet-300 font-medium transition-colors"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      Live Project
+                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-white font-medium transition-colors"
+                      >
+                        <Github className="w-3.5 h-3.5" />
+                        Code
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.article>
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

@@ -21,16 +21,16 @@ function App() {
     <>
      <Navigation />
       {/* <VideoFrame /> */}
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
        <Hero />
-       <AboutCarousel />
+       {/* <AboutCarousel /> */}
        <About />
        {/* <Experience /> */}
-       <ProjectCarousel />
+       {/* <ProjectCarousel /> */}
         <Projects />
-        <SkillCarousel />
+        {/* <SkillCarousel /> */}
         <Tools />
-        <ContactCarousel />
+        {/* <ContactCarousel /> */}
         <Contact />
         <Footer />
     </>

@@ -1,149 +1,114 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-import { Terminal } from "lucide-react";
-import ResumeBtn from "@/components/ResumeBtn";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { FileDown } from "lucide-react";
-
-// import { ModeToggle } from "@/components/mode-toggle";
-import Logo from "../assets/images/pro.jpg";
+import React, { useState, useEffect } from "react";
+import { Menu, X, FileDown } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
+import Logo from "../assets/images/pro.jpg";
 import resumePDF from "../assets/resume.pdf";
 
+const navLinks = [
+  { label: "About", href: "/#about" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Contact", href: "/#contact" },
+];
+
 function Navigation() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
-      {/* Header */}
-      <header className="flex border-b border-black/10 py-4 lg:px-20 px-5 fixed w-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md z-50">
+      <header
+        className={`flex border-b border-white/10 py-4 lg:px-20 px-5 fixed w-full z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-[#0a0a0a]/95 backdrop-blur-md shadow-lg shadow-black/20"
+            : "bg-[#0a0a0a]/80 backdrop-blur-sm"
+        }`}
+      >
         <div className="container mx-auto flex justify-between items-center">
-          <HashLink
-            smooth
-            to="/"
-            className="text-xl font-bold flex items-center gap-2"
-          >
-            <Terminal className="h-5 w-5" />
-            <Avatar>
-              <AvatarImage src={Logo} alt="@shadcn" />
-              <AvatarFallback>AR</AvatarFallback>
-            </Avatar>
+          {/* Logo */}
+          <HashLink smooth to="/" className="flex items-center gap-3 group">
+            <div className="relative">
+              <div className="w-9 h-9 rounded-full overflow-hidden ring-2 ring-[#c084fc]/40 group-hover:ring-[#c084fc]/80 transition-all duration-300">
+                <img src={Logo} alt="Arinze" className="w-full h-full object-cover" />
+              </div>
+              <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-400 rounded-full border-2 border-[#0a0a0a]" />
+            </div>
+            <span className="font-clash text-white font-bold text-lg tracking-tight">
+              Arizon<span className="text-[#c084fc]">.</span>
+            </span>
           </HashLink>
-          <nav className="">
-            {/* {["about", "projects", "skills", "contact"].map((item) => (
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
               <HashLink
-                key={item}
+                key={link.href}
                 smooth
-                to={`/#${item.toLowerCase()}`}
-                className="text-sm uppercase tracking-wider hover:text-gray-600 transition-colors"
+                to={link.href}
+                className="text-sm text-gray-400 hover:text-white transition-colors duration-200 tracking-wide font-medium relative group"
               >
-                {item}
+                {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#c084fc] group-hover:w-full transition-all duration-300" />
               </HashLink>
-            ))} */}
-            <span className="relative -left-2 z-30 -top-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.3em"
-                height="1.3em"
-                viewBox="0 0 24 24"
-                className="absolute animate-pulse"
-              >
-                <g fill="none">
-                  <path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
-                  <path
-                    fill="#fff"
-                    d="M9.107 5.448c.598-1.75 3.016-1.803 3.725-.159l.06.16l.807 2.36a4 4 0 0 0 2.276 2.411l.217.081l2.36.806c1.75.598 1.803 3.016.16 3.725l-.16.06l-2.36.807a4 4 0 0 0-2.412 2.276l-.081.216l-.806 2.361c-.598 1.75-3.016 1.803-3.724.16l-.062-.16l-.806-2.36a4 4 0 0 0-2.276-2.412l-.216-.081l-2.36-.806c-1.751-.598-1.804-3.016-.16-3.724l.16-.062l2.36-.806A4 4 0 0 0 8.22 8.025l.081-.216zM19 2a1 1 0 0 1 .898.56l.048.117l.35 1.026l1.027.35a1 1 0 0 1 .118 1.845l-.118.048l-1.026.35l-.35 1.027a1 1 0 0 1-1.845.117l-.048-.117l-.35-1.026l-1.027-.35a1 1 0 0 1-.118-1.845l.118-.048l1.026-.35l.35-1.027A1 1 0 0 1 19 2"
-                  />
-                </g>
-              </svg>
-            </span>
-            {/* Resume */}
-            <ResumeBtn />
-            <span className="star-2 relative -right-24 z-30 bottom-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.3em"
-                height="1.3em"
-                viewBox="0 0 24 24"
-                className="absolute animate-pulse"
-              >
-                <g fill="none">
-                  <path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
-                  <path
-                    fill="#fff"
-                    d="M9.107 5.448c.598-1.75 3.016-1.803 3.725-.159l.06.16l.807 2.36a4 4 0 0 0 2.276 2.411l.217.081l2.36.806c1.75.598 1.803 3.016.16 3.725l-.16.06l-2.36.807a4 4 0 0 0-2.412 2.276l-.081.216l-.806 2.361c-.598 1.75-3.016 1.803-3.724.16l-.062-.16l-.806-2.36a4 4 0 0 0-2.276-2.412l-.216-.081l-2.36-.806c-1.751-.598-1.804-3.016-.16-3.724l.16-.062l2.36-.806A4 4 0 0 0 8.22 8.025l.081-.216zM19 2a1 1 0 0 1 .898.56l.048.117l.35 1.026l1.027.35a1 1 0 0 1 .118 1.845l-.118.048l-1.026.35l-.35 1.027a1 1 0 0 1-1.845.117l-.048-.117l-.35-1.026l-1.027-.35a1 1 0 0 1-.118-1.845l.118-.048l1.026-.35l.35-1.027A1 1 0 0 1 19 2"
-                  />
-                </g>
-              </svg>
-            </span>
+            ))}
+            <a
+              href={resumePDF}
+              download="Arinze_Chinweuba_Resume.pdf"
+              className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg border border-[#c084fc]/40 text-[#c084fc] hover:bg-[#c084fc]/10 hover:border-[#c084fc]/70 transition-all duration-200"
+            >
+              <FileDown className="w-4 h-4" />
+              Resume
+            </a>
           </nav>
 
-          {/* <div className="flex gap-2">
-            <ModeToggle className="" />
-
-            <div className="lg:hidden md:hidden">
-              <Drawer className="">
-                {" "}
-                <DrawerTrigger>
-                  <Button variant="outline">
-                    <AlignRight size={28} strokeWidth={2.5} />
-                  </Button>
-                </DrawerTrigger>
-                <DrawerContent>
-                  <DrawerHeader className="text-center">
-                    <DrawerTitle className="text-xl font-bold">
-                      Menu
-                    </DrawerTitle>
-                  </DrawerHeader>
-                  <nav className="flex flex-col gap-4 p-4">
-                    <DrawerClose>
-                      <HashLink
-                        smooth
-                        to="/#about"
-                        className="text-left hover:underline"
-                      >
-                        About
-                      </HashLink>
-                    </DrawerClose>
-                    <DrawerClose>
-                      <HashLink
-                        smooth
-                        to="/#projects"
-                        className="text-base hover:underline"
-                      >
-                        Project
-                      </HashLink>
-                    </DrawerClose>
-                    <DrawerClose>
-                      <HashLink
-                        smooth
-                        to="/#skills"
-                        className="text-base hover:underline"
-                      >
-                        Tools
-                      </HashLink>
-                    </DrawerClose>
-                    <DrawerClose>
-                      <HashLink
-                        smooth
-                        to="/#contact"
-                        className="text-base hover:underline"
-                      >
-                        Contact
-                      </HashLink>
-                    </DrawerClose>
-                  </nav>
-                  <DrawerFooter className="mt-auto">
-                    <DrawerClose>
-                      <Button variant="outline" className="w-full">
-                        Close
-                      </Button>
-                    </DrawerClose>
-                  </DrawerFooter>
-                </DrawerContent>
-              </Drawer>
-            </div>
-          </div> */}
+          {/* Mobile hamburger */}
+          <button
+            className="md:hidden text-gray-300 hover:text-white transition-colors p-1"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
       </header>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="fixed inset-0 z-40 md:hidden">
+          <div
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            onClick={() => setMobileOpen(false)}
+          />
+          <div className="absolute top-0 right-0 h-full w-72 bg-[#0f0f0f] border-l border-white/10 flex flex-col pt-20 px-6 gap-2 shadow-2xl">
+            {navLinks.map((link) => (
+              <HashLink
+                key={link.href}
+                smooth
+                to={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="text-lg text-gray-300 hover:text-white py-3 border-b border-white/5 transition-colors font-medium"
+              >
+                {link.label}
+              </HashLink>
+            ))}
+            <a
+              href={resumePDF}
+              download="Arinze_Chinweuba_Resume.pdf"
+              onClick={() => setMobileOpen(false)}
+              className="mt-6 flex items-center justify-center gap-2 text-sm font-medium px-4 py-3 rounded-lg border border-[#c084fc]/40 text-[#c084fc] hover:bg-[#c084fc]/10 transition-all"
+            >
+              <FileDown className="w-4 h-4" />
+              Download Resume
+            </a>
+          </div>
+        </div>
+      )}
     </>
   );
 }
