@@ -79,7 +79,7 @@ const Hero = () => {
     <section
       onPointerMove={handlePointerMove}
       onPointerLeave={resetTilt}
-      className="min-h-screen flex items-center pt-20 pb-16 px-5 lg:px-20 bg-[#0a0a0a] relative overflow-hidden"
+      className="min-h-screen flex items-center pt-20 lg:pb-16 px-5 lg:px-20 bg-[#0a0a0a] relative overflow-hidden"
     >
       {/* Background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(192,132,252,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(192,132,252,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
@@ -107,7 +107,7 @@ const Hero = () => {
             <p className="text-gray-500 text-sm font-mono mb-2 tracking-widest uppercase">
               Hello, I'm
             </p>
-            <h1 className="font-clash text-6xl md:text-8xl font-bold text-white leading-none tracking-tight mb-4">
+            <h1 className="font-clash text-5xl lg:text-6xl md:text-8xl font-bold text-white leading-none tracking-tight mb-4">
               Arinze<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c084fc] to-violet-400">
                 Chinweuba
@@ -124,7 +124,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Tagline */}
-          <motion.p variants={itemVariants} className="text-gray-400 text-lg max-w-xl leading-relaxed mb-8">
+          <motion.p variants={itemVariants} className="text-gray-400 lg:text-lg max-w-xl leading-relaxed mb-8">
             4 years building production web apps. Now leveling up into AI engineering —
             combining solid frontend foundations with machine learning to build smarter products.
           </motion.p>

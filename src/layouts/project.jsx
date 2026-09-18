@@ -1,46 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import IdleFarmerImg from "../assets/images/idlefarmer.png";
-import DoraImg from "../assets/images/dora.png";
-import ElneemaImg from "../assets/images/elneema.png";
 import KreaImg from "../assets/images/krea.png";
-import NabetoImg from "../assets/images/nabeto.png";
-import MymindspaceImg from "../assets/images/mymindspace.png";
-import MyBuddyImg from "../assets/images/mybuddy.png";
+
+
 
 const projects = [
-
-  {
-    title: "My Mind Space",
-    category: "Web App",
-    description: "Mental health app for journaling, mood tracking, and mindfulness — built to give users a private, judgment-free space to manage their wellbeing.",
-    tech: ["React", "TailwindCSS", "Vite"],
-    image: MymindspaceImg,
-    url: "https://my-mynd-space.vercel.app/",
-    github: null,
-    featured: true,
-  },
-  {
-    title: "El-Neema Care Initiative",
-    category: "Web App",
-    description: "NGO platform fighting period poverty. Educates young girls on menstrual hygiene and connects them to care resources across Nigeria.",
-    tech: ["React", "TailwindCSS", "Vite"],
-    image: ElneemaImg,
-    url: "https://www.elneemacaresinitiative.org/",
-    github: null,
-    featured: true,
-  },
-  {
-    title: "Nabeto Engineering",
-    category: "Web App",
-    description: "Corporate website for an EPC (Engineering, Procurement & Construction) services firm — clean, professional, built for credibility.",
-    tech: ["React", "Tailwind", "TypeScript"],
-    image: NabetoImg,
-    url: "https://nabetoengineering.com",
-    github: null,
-    featured: false,
-  },
   {
     title: "Krea AI Clone",
     category: "Practice",
