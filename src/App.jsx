@@ -20,18 +20,9 @@ function App() {
   return (
     <>
      <Navigation />
-      {/* <VideoFrame /> */}
-      {/* <HomeCarousel /> */}
        <Hero />
-       {/* <AboutCarousel /> */}
-       {/* <About /> */}
-       {/* <Experience /> */}
        {/* <ProjectCarousel /> */}
         <Projects />
-        {/* <SkillCarousel /> */}
-        {/* <Tools /> */}
-        {/* <ContactCarousel /> */}
-        {/* <Contact /> */}
         <Footer />
     </>
   )
