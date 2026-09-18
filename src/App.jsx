@@ -21,7 +21,6 @@ function App() {
     <>
      <Navigation />
        <Hero />
-       {/* <ProjectCarousel /> */}
         <Projects />
         <Footer />
     </>
