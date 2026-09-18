@@ -24,14 +24,14 @@ function App() {
       {/* <HomeCarousel /> */}
        <Hero />
        {/* <AboutCarousel /> */}
-       <About />
+       {/* <About /> */}
        {/* <Experience /> */}
        {/* <ProjectCarousel /> */}
         <Projects />
         {/* <SkillCarousel /> */}
-        <Tools />
+        {/* <Tools /> */}
         {/* <ContactCarousel /> */}
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
     </>
   )

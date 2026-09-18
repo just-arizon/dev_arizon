@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
 
           {/* Right — form */}
-          <div className="bg-white/3 border border-white/8 rounded-2xl p-8">
+          {/* <div className="bg-white/3 border border-white/8 rounded-2xl p-8">
             <h3 className="font-clash text-white font-bold text-xl mb-6">Send a message</h3>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-2 gap-4">
@@ -127,7 +127,7 @@ const Contact = () => {
                 )}
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

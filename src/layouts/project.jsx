@@ -10,16 +10,7 @@ import MymindspaceImg from "../assets/images/mymindspace.png";
 import MyBuddyImg from "../assets/images/mybuddy.png";
 
 const projects = [
-  {
-    title: "IdleFarmer",
-    category: "Web App",
-    description: "Empowers Nigerian farmers with a web platform connecting them to tractors, bulk inputs, and farm support. Solved the access gap between smallholder farmers and modern agri-tools.",
-    tech: ["React", "TailwindCSS", "Vite"],
-    image: IdleFarmerImg,
-    url: "https://www.idlefarmer.africa/",
-    github: null,
-    featured: true,
-  },
+
   {
     title: "My Mind Space",
     category: "Web App",
@@ -51,16 +42,6 @@ const projects = [
     featured: false,
   },
   {
-    title: "Use-Dora",
-    category: "Web App",
-    description: "Travel platform connecting adventurers with local guides for unique, culture-rich trips.",
-    tech: ["React", "TailwindCSS", "Vite"],
-    image: DoraImg,
-    url: "https://your-portfolio.com",
-    github: null,
-    featured: false,
-  },
-  {
     title: "Krea AI Clone",
     category: "Practice",
     description: "Pixel-perfect clone of Krea AI's interface, built to sharpen Next.js + TypeScript skills.",
@@ -80,7 +61,7 @@ const Projects = () => {
   const filtered = active === "All" ? projects : projects.filter((p) => p.category === active);
 
   return (
-    <section id="projects" className="py-24 px-5 lg:px-20 bg-[#0a0a0a] border-t border-white/5">
+    <section id="projects" className="py-16 px-5 lg:px-20 bg-[#0a0a0a] border-t border-white/5">
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex items-center gap-4 mb-12">

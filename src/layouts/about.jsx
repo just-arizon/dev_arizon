@@ -4,8 +4,8 @@ import { MapPin, Clock, Briefcase, Globe, ArrowUpRight } from "lucide-react";
 
 const About = () => {
   const facts = [
-    { icon: <MapPin className="w-4 h-4" />, label: "Location", value: "Anambra, Nigeria" },
-    { icon: <Clock className="w-4 h-4" />, label: "Experience", value: "3+ Years" },
+    // { icon: <MapPin className="w-4 h-4" />, label: "Location", value: "Anambra, Nigeria" },
+    // { icon: <Clock className="w-4 h-4" />, label: "Experience", value: "3+ Years" },
     { icon: <Briefcase className="w-4 h-4" />, label: "Availability", value: "Full-time / Freelance" },
     { icon: <Globe className="w-4 h-4" />, label: "Remote", value: "Fully Available" },
   ];
